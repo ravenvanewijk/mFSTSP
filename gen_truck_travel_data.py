@@ -1,15 +1,17 @@
 import math
 import os
 import csv
+import time
 import graph_gen as gg
 import taxicab_st as ts
 import pandas as pd
 import osmnx as ox
+import matplotlib.pyplot as plt
 from geopy.distance import geodesic
 
 def gen_truck_travel_times():
 
-    problems = ['20170606T123331779163']
+    problems = ['20170606T113038113409']
     # Use this if all results are desired
     # problems = os.listdir('Problems')
 
@@ -41,6 +43,11 @@ def gen_truck_travel_times():
                                 edge_dtypes={'osmid': str_interpret,
                                             'reversed': str_interpret})
 
+        #_____
+
+        # plot_graph(G, highlight_nodes=[9029518648, 53185265])
+        #____
+
         # Navigate back to original folder         
         os.chdir(os.getcwd().rsplit(graphfolder, 1)[0])
 
@@ -57,11 +64,58 @@ def gen_truck_travel_times():
             # Iterate over the customer nodeIDs and write the data rows
             for i in customers['% nodeID']:
                 for j in customers['% nodeID']:
+                    print(i,j)
+                    if i == 0 and j == 10:
+                        continue
                     i_pos = (customers.loc[i]['latDeg'], customers.loc[i]['lonDeg'])
                     j_pos = (customers.loc[j]['latDeg'], customers.loc[j]['lonDeg'])
                     time = ts.time.shortest_path(G, i_pos, j_pos)[0]
                     dist = geodesic(i_pos, j_pos).meters
                     writer.writerow([i, j, time, dist])
+
+
+def plot_graph(G, highlight_nodes=None, depots=False, locs=None, depots_locs=None):
+    """Plots the graph of the selected gpkg file and highlights specified nodes."""
+    # Plot city graph
+    fig, ax = ox.plot_graph(G, show=False, close=False)
+    
+    # Plot the specified nodes
+    if highlight_nodes is not None:
+        highlight_positions = {node: (G.nodes[node]['x'], G.nodes[node]['y']) for node in highlight_nodes}
+        highlight_scatter = ax.scatter(
+            [pos[0] for pos in highlight_positions.values()],
+            [pos[1] for pos in highlight_positions.values()],
+            c='red', s=50, zorder=5, label='Highlighted Nodes'
+        )
+    
+    # Plot the customer locations if provided
+    if locs is not None:
+        customer_scatter = ax.scatter(
+            [point.x for _, point in locs.items()],
+            [point.y for _, point in locs.items()],
+            c='red', s=50, zorder=5, label='Customers'
+        )
+    
+    # Plot the depots if specified
+    if depots and depots_locs is not None:
+        plural = 's' if len(depots_locs) > 1 else ''
+        depot_scatter = ax.scatter(
+            [point.x for _, point in depots_locs.items()],
+            [point.y for _, point in depots_locs.items()],
+            c='blue', s=100, zorder=5, label='Depot' + plural
+        )
+    
+    # Show the plot with a legend
+    handles = []
+    if highlight_nodes is not None:
+        handles.append(highlight_scatter)
+    if locs is not None:
+        handles.append(customer_scatter)
+    if depots and depots_locs is not None:
+        handles.append(depot_scatter)
+    
+    ax.legend(handles=handles)
+    plt.show()
 
 
 def get_map_lims(customer_locs, margin, unit='km'):
@@ -113,5 +167,16 @@ def str_interpret(value):
 
 if __name__ == '__main__':
     # disable caching, reduce clutter
-    ox.config(use_cache=False)  
+    ox.config(use_cache=False)
+    # Start time
+    start_time = time.time()
+
+    # run main function
     gen_truck_travel_times()
+
+    # End time
+    end_time = time.time()
+
+    # Total time taken
+    elapsed_time = end_time - start_time
+    print(f"Elapsed time: {elapsed_time} seconds")
