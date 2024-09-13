@@ -56,6 +56,9 @@ from solve_mfstsp_heuristic import *
 
 import distance_functions
 
+import multiprocessing as mp
+import tqdm
+
 # =============================================================
 startTime 		= time.time()
 
@@ -142,16 +145,15 @@ class missionControl():
 
 		timestamp = datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S')
 
-		problemName 		= sys.argv[1]
-		vehicleFileID		= int(sys.argv[2])			
-		cutoffTime 			= float(sys.argv[3])
-		problemType 		= int(sys.argv[4])
-		numUAVs				= int(sys.argv[5])
-		numTrucks			= int(sys.argv[6])
-		requireTruckAtDepot = bool(int(sys.argv[7]))
-		requireDriver 		= bool(int(sys.argv[8]))
-		Etype				= int(sys.argv[9])
-		ITER 				= int(sys.argv[10])
+		vehicleFileID		= int(vehicleFileID)			
+		cutoffTime 			= float(cutoffTime)
+		problemType 		= int(problemType)
+		numUAVs				= int(numUAVs)
+		numTrucks			= int(numTrucks)
+		requireTruckAtDepot = bool(requireTruckAtDepot)
+		requireDriver 		= bool(requireDriver)
+		Etype				= int(Etype)
+		ITER 				= int(ITER)
 		
 
 		self.locationsFile = 'Problems/%s/tbl_locations.csv' % (problemName)
@@ -234,7 +236,7 @@ class missionControl():
 
 
 		# Write in the solution file:
-		myFile = open(self.solutionSummaryFile, 'a')
+		myFile = open(self.solutionSummaryFile, 'w')
 		myFile.write('problemName, vehicleFileID, cutoffTime, problemTypeString, numUAVs, numTrucks, requireTruckAtDepot, requireDriver, Etype, ITER \n')
 		str = '%s, %d, %f, %s, %d, %d, %s, %s, %d, %d \n\n' % (problemName, vehicleFileID, cutoffTime, problemTypeString[problemType], numUAVs, numTrucks, requireTruckAtDepot, requireDriver, Etype, ITER)
 		myFile.write(str)
@@ -385,7 +387,18 @@ class missionControl():
 			exit()
 
 
-import argparse
+# A function for multiprocessing
+def process_mission_control(args):
+	problem, num, mission_args = args
+	print(problem)
+	try:
+		missionControl(problem, mission_args.vehicleFileID, mission_args.cutoffTime, 
+					   mission_args.problemType, num, mission_args.numTrucks,
+					   mission_args.requireTruckAtDepot, mission_args.requireDriver,
+					   mission_args.Etype, mission_args.ITER)
+	except Exception as e:
+		print('\n The following file resulted in an error:\n')
+		print(problem, num, e)
 
 if __name__ == '__main__':
 	# Create an argument parser
@@ -414,12 +427,42 @@ if __name__ == '__main__':
 
 	args = parser.parse_args()
 
-	try:
-		missionControl()
-	except:
-		print("There was a problem.  Sorry things didn't work out.  Bye.")
-		raise
+	file_pattern = r'^\d{8}T\d{6}\d{6}$'
 
-# problemName, vehicleFileID, cutoffTime, problemType,
-# 				numUAVs, numTrucks, requireTruckAtDepot, requireDriver,
-# 				Etype, ITER=-1
+	if args.problemName == 'ALL':
+		problem_folder = '/Problems'
+		all_files = os.listdir(os.getcwd() + problem_folder)
+		args.problemName = [filename for filename in \
+							all_files if re.match(file_pattern, filename)]
+
+	if args.numUAVs == 'ALL':
+		args.numUAVs = [1, 2, 3 ,4]
+
+	# args.problemName = ['20170606T123800566693']
+	# args.numUAVs = [1]
+
+	# Code below for processing with multiple cores
+	# Create a list of tasks for each combination of problem and numUAVs
+	input_arr = [(problem, num, args) for problem in args.problemName for num in args.numUAVs]
+	
+	# Set up the multiprocessing pool
+	with mp.Pool(4) as pool:  # 4 is the number of processes, adjust as needed
+		# Use tqdm to track progress
+		list(tqdm.tqdm(pool.imap(process_mission_control, input_arr), total=len(input_arr)))
+	
+#	# Regular processing with 1 core
+# 	for problem in args.problemName:
+# 		for num in args.numUAVs:
+# 			missionControl(problem, args.vehicleFileID, args.cutoffTime, 	
+# 				args.problemType, num, args.numTrucks,
+# 				args.requireTruckAtDepot, args.requireDriver,
+# 				args.Etype, args.ITER)
+# 			try:
+# 				missionControl(problem, args.vehicleFileID, args.cutoffTime, 	
+# 								args.problemType, num, args.numTrucks,
+# 								args.requireTruckAtDepot, args.requireDriver,
+# 								args.Etype, args.ITER)
+# 			except:
+# 				print('\n The following file resulted in an error:\n')
+# 				print(problem, num)
+
