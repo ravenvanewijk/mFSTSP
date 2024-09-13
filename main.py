@@ -164,7 +164,7 @@ class missionControl():
 			elif problemType == 2:
 				indicator = 'Heuristic'
 			self.solutionSummaryFile = 'Problems/%s/tbl_solutions_%d_%d_%s.csv' % (problemName, vehicleFileID, numUAVs, indicator)
-			self.distmatrixFile = 'Problems/%s/tbl_truck_travel_data_PG.csv' % (problemName)
+			self.distmatrixFile = 'Problems/%s/tbl_truck_travel_data_%s.csv' % (problemName, problemName)
 
 		else:
 			print('ERROR: You passed %d input parameters.' % (len(sys.argv)-1))

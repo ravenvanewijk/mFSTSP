@@ -1,77 +1,87 @@
 import math
 import os
+import re
 import csv
 import time
+import numpy as np
 import graph_gen as gg
 import taxicab_st as ts
 import pandas as pd
 import osmnx as ox
 import matplotlib.pyplot as plt
+import multiprocessing as mp
 from geopy.distance import geodesic
+import tqdm
 
-def gen_truck_travel_times():
+def gen_problem_list():
+    # Define the regex pattern for filenames like '20170608T122108589505'
+    pattern = r'^\d{8}T\d{12}$'
 
-    problems = ['20170606T113038113409']
+    # problems = ['20170608T122108589505']
     # Use this if all results are desired
-    # problems = os.listdir('Problems')
+    all_problems = os.listdir('Problems')
+    problems = [file for file in all_problems if re.match(pattern, file)]
 
-    for problem in problems:
-        # Load customer locations
-        customers = pd.read_csv(f'Problems/{problem}/tbl_locations.csv')
-        customers.columns = customers.columns.str.strip()
-        customer_latlons = customers[['latDeg', 'lonDeg']].to_numpy().tolist()
-        # 4 km border for the map is sufficient
-        lims = get_map_lims(customer_latlons, 4)
-        try:
-            city = gg.get_city_from_bbox(lims[0], lims[1], lims[2], lims[3])
-        except gg.utils.CityNotFoundError:
-            print("Customers are in an unknown location")
+    return problems
 
-        # Change directory to graph folder
-        try:
-            graphfolder = '/graphs'
-            os.chdir(os.getcwd() + graphfolder)
-        except:
-            raise Exception('Graphs folder not found')
-        
-        # Check if the file exists in the specified folder
-        if f'{city}.graphml' not in os.listdir():
-            # Graph does not exist, create new one
-            gg.generate_graph(lims[0], lims[1], lims[2], lims[3])
 
-        G = ox.load_graphml(filepath=f'{city}.graphml',
-                                edge_dtypes={'osmid': str_interpret,
-                                            'reversed': str_interpret})
+def gen_truck_travel_time(problem):
+    print(problem)
+    # Load customer locations
+    customers = pd.read_csv(f'Problems/{problem}/tbl_locations.csv')
+    customers.columns = customers.columns.str.strip()
+    customer_latlons = customers[['latDeg', 'lonDeg']].to_numpy().tolist()
+    # 4 km border for the map is sufficient
+    lims = get_map_lims(customer_latlons, 4)
+    # try:
+    #     city = gg.get_city_from_bbox(lims[0], lims[1], lims[2], lims[3])
+    # except gg.utils.CityNotFoundError:
+    #     print("Customers are in an unknown location")
 
-        #_____
+    city = find_nearest_city((np.mean((lims[0], lims[1])), 
+                                    np.mean((lims[2], lims[3]))), 
+                                    city_coords)
 
-        # plot_graph(G, highlight_nodes=[9029518648, 53185265])
-        #____
+    # Change directory to graph folder
+    try:
+        graphfolder = '/graphs'
+        os.chdir(os.getcwd() + graphfolder)
+    except:
+        raise Exception('Graphs folder not found')
+    
+    # # Check if the file exists in the specified folder
+    # if f'{city}.graphml' not in os.listdir():
+    #     # Graph does not exist, create new one
+    #     gg.generate_graph(lims[0], lims[1], lims[2], lims[3])
 
-        # Navigate back to original folder         
-        os.chdir(os.getcwd().rsplit(graphfolder, 1)[0])
+    G = ox.load_graphml(filepath=f'{city}.graphml',
+                            edge_dtypes={'osmid': str_interpret,
+                                        'reversed': str_interpret})
 
-        # Define the path and filename for the CSV
-        output_path = f'Problems/{problem}/tbl_truck_travel_data_ST.csv'
+    # Navigate back to original folder         
+    os.chdir(os.getcwd().rsplit(graphfolder, 1)[0])
 
-        # Open the CSV file for writing
-        with open(output_path, mode='w', newline='') as file:
-            writer = csv.writer(file)
+    # Define the path and filename for the CSV
+    output_path = f'Problems/timing_tables/tbl_truck_travel_data_{problem}.csv'
 
-            # Write the header row
-            writer.writerow(['% from location i', 'to location j', 'time [sec]', 'distance [meters]'])
+    # Open the CSV file for writing
+    with open(output_path, mode='w', newline='') as file:
+        writer = csv.writer(file)
 
-            # Iterate over the customer nodeIDs and write the data rows
-            for i in customers['% nodeID']:
-                for j in customers['% nodeID']:
-                    print(i,j)
-                    if i == 0 and j == 10:
-                        continue
-                    i_pos = (customers.loc[i]['latDeg'], customers.loc[i]['lonDeg'])
-                    j_pos = (customers.loc[j]['latDeg'], customers.loc[j]['lonDeg'])
+        # Write the header row
+        writer.writerow(['% from location i', 'to location j', 'time [sec]', 'distance [meters]'])
+
+        # Iterate over the customer nodeIDs and write the data rows
+        for i in customers['% nodeID']:
+            for j in customers['% nodeID']:
+                i_pos = (customers.loc[i]['latDeg'], customers.loc[i]['lonDeg'])
+                j_pos = (customers.loc[j]['latDeg'], customers.loc[j]['lonDeg'])
+                try:
                     time = ts.time.shortest_path(G, i_pos, j_pos)[0]
-                    dist = geodesic(i_pos, j_pos).meters
-                    writer.writerow([i, j, time, dist])
+                except:
+                    print(i, j, problem)
+                dist = geodesic(i_pos, j_pos).meters
+                writer.writerow([i, j, time, dist])
 
 
 def plot_graph(G, highlight_nodes=None, depots=False, locs=None, depots_locs=None):
@@ -165,18 +175,34 @@ def get_map_lims(customer_locs, margin, unit='km'):
 def str_interpret(value):
     return value  # Ensure the value remains a string
 
+city_coords = {
+            "Seattle": (47.6062, -122.3321),
+            "Buffalo": (42.8864, -78.8784)
+            }
+
+def find_nearest_city(location, city_coords):
+    """Find the nearest city to a given location."""
+    nearest_city = None
+    min_distance = float('inf')
+
+    for city, (city_lat, city_lon) in city_coords.items():
+        distance = geodesic((location[0], location[1]), \
+                            (city_lat, city_lon)).meters
+        if distance < min_distance:
+            min_distance = distance
+            nearest_city = city
+
+    return nearest_city
+
 if __name__ == '__main__':
     # disable caching, reduce clutter
     ox.config(use_cache=False)
-    # Start time
-    start_time = time.time()
+    
+    # problems = gen_problem_list()
+    problems = ['20170606T181732755419']
 
-    # run main function
-    gen_truck_travel_times()
+    for problem in problems:
+        gen_truck_travel_time(problem)
 
-    # End time
-    end_time = time.time()
-
-    # Total time taken
-    elapsed_time = end_time - start_time
-    print(f"Elapsed time: {elapsed_time} seconds")
+    # with mp.Pool(4) as p:
+    #     results = list(tqdm.tqdm(p.imap(gen_truck_travel_time, problems), total = len(problems)))
