@@ -39,6 +39,7 @@ import sys
 import datetime
 import time
 import math
+import argparse
 from collections import defaultdict
 import pandas as pd
 
@@ -135,40 +136,33 @@ class make_travel:
 
 
 class missionControl():
-	def __init__(self):
+	def __init__(self, problemName, vehicleFileID, cutoffTime, problemType,
+				numUAVs, numTrucks, requireTruckAtDepot, requireDriver,
+				Etype, ITER):
 
 		timestamp = datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S')
 
-		# python main.py 20170608T121632668184 101 3600 1 3 -1 1 1 1 -1
-		# Capture 10 inputs from the command line
-		# NOTE: sys.argv[0] is the name of the python file
-		# Try "print sys.argv" (without the quotes) to see the sys.argv list
-		# 10 inputs --> the sys.argv list should have 11 elements.
-		if (len(sys.argv) == 11):
-			problemName 		= sys.argv[1]
-			vehicleFileID		= int(sys.argv[2])			
-			cutoffTime 			= float(sys.argv[3])
-			problemType 		= int(sys.argv[4])
-			numUAVs				= int(sys.argv[5])
-			numTrucks			= int(sys.argv[6])
-			requireTruckAtDepot = bool(int(sys.argv[7]))
-			requireDriver 		= bool(int(sys.argv[8]))
-			Etype				= int(sys.argv[9])
-			ITER 				= int(sys.argv[10])
-			
+		problemName 		= sys.argv[1]
+		vehicleFileID		= int(sys.argv[2])			
+		cutoffTime 			= float(sys.argv[3])
+		problemType 		= int(sys.argv[4])
+		numUAVs				= int(sys.argv[5])
+		numTrucks			= int(sys.argv[6])
+		requireTruckAtDepot = bool(int(sys.argv[7]))
+		requireDriver 		= bool(int(sys.argv[8]))
+		Etype				= int(sys.argv[9])
+		ITER 				= int(sys.argv[10])
+		
 
-			self.locationsFile = 'Problems/%s/tbl_locations.csv' % (problemName)
-			self.vehiclesFile = 'Problems/tbl_vehicles_%d.csv' % (vehicleFileID)
-			if problemType == 1:
-				indicator = 'IP'
-			elif problemType == 2:
-				indicator = 'Heuristic'
-			self.solutionSummaryFile = 'Problems/%s/tbl_solutions_%d_%d_%s.csv' % (problemName, vehicleFileID, numUAVs, indicator)
-			self.distmatrixFile = 'Problems/%s/tbl_truck_travel_data_%s.csv' % (problemName, problemName)
+		self.locationsFile = 'Problems/%s/tbl_locations.csv' % (problemName)
+		self.vehiclesFile = 'Problems/tbl_vehicles_%d.csv' % (vehicleFileID)
+		if problemType == 1:
+			indicator = 'IP'
+		elif problemType == 2:
+			indicator = 'Heuristic'
+		self.solutionSummaryFile = 'Problems/%s/tbl_solutions_%d_%d_%s.csv' % (problemName, vehicleFileID, numUAVs, indicator)
+		self.distmatrixFile = 'Problems/%s/tbl_truck_travel_data_%s.csv' % (problemName, problemName)
 
-		else:
-			print('ERROR: You passed %d input parameters.' % (len(sys.argv)-1))
-			quit()
 
 
 		# Define data structures
@@ -391,9 +385,41 @@ class missionControl():
 			exit()
 
 
+import argparse
+
 if __name__ == '__main__':
+	# Create an argument parser
+	parser = argparse.ArgumentParser(description="Run the missionControl")
+
+	parser.add_argument('problemName', type=str, nargs='?', 
+						default='ALL', help="Name of the input directory.")
+	parser.add_argument('vehicleFileID', type=str, nargs='?', 
+						default='101', help="Name of the solution file.")
+	parser.add_argument('cutoffTime', type=str, nargs='?', 
+						default=5, help="Uncertainty included in the scenario.")
+	parser.add_argument('problemType', type=str, nargs='?', 
+						default=2, help="Problem type.")
+	parser.add_argument('numUAVs', type=str, nargs='?', 
+						default='ALL', help="Number of UAVs.")
+	parser.add_argument('numTrucks', type=str, nargs='?', 
+						default=-1, help="Number of trucks.")
+	parser.add_argument('requireTruckAtDepot', type=str, nargs='?', 
+						default=1, help="Require truck at depot.")
+	parser.add_argument('requireDriver', type=str, nargs='?', 
+						default=1, help="Require driver.")
+	parser.add_argument('Etype', type=str, nargs='?', 
+						default=5, help="E-type configuration.")
+	parser.add_argument('ITER', type=str, nargs='?', 
+						default=1, help="Iteration count.")
+
+	args = parser.parse_args()
+
 	try:
 		missionControl()
 	except:
 		print("There was a problem.  Sorry things didn't work out.  Bye.")
 		raise
+
+# problemName, vehicleFileID, cutoffTime, problemType,
+# 				numUAVs, numTrucks, requireTruckAtDepot, requireDriver,
+# 				Etype, ITER=-1
