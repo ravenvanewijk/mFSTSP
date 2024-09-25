@@ -438,7 +438,7 @@ if __name__ == '__main__':
 	if args.numUAVs == 'ALL':
 		args.numUAVs = [1, 2, 3 ,4]
 
-	# args.problemName = ['20170606T123800566693']
+	args.problemName = ['20170608T122043762852']
 	# args.numUAVs = [1]
 
 	# Code below for processing with multiple cores

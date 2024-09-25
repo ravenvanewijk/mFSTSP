@@ -41,8 +41,6 @@ def gen_truck_travel_time(problem):
     city = find_nearest_city((np.mean((lims[0], lims[1])), 
                                     np.mean((lims[2], lims[3]))), 
                                     city_coords)
-    if city == 'Buffalo':
-        return
 
     # Change directory to graph folder
     try:
@@ -201,10 +199,10 @@ if __name__ == '__main__':
     ox.config(use_cache=False)
     
     problems = gen_problem_list()
-    # problems = ['20170606T181907372750']
+    problems = ['20170608T122043762852']
 
-    # for problem in problems:
-    #     gen_truck_travel_time(problem)
+    for problem in problems:
+        gen_truck_travel_time(problem)
 
-    with mp.Pool(4) as p:
-        results = list(tqdm.tqdm(p.imap(gen_truck_travel_time, problems), total = len(problems)))
+    # with mp.Pool(4) as p:
+    #     results = list(tqdm.tqdm(p.imap(gen_truck_travel_time, problems), total = len(problems)))
