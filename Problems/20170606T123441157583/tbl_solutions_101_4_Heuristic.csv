@@ -1,429 +1,469 @@
 problemName, vehicleFileID, cutoffTime, problemTypeString, numUAVs, numTrucks, requireTruckAtDepot, requireDriver, Etype, ITER 
-20170606T123441157583, 101, 5.000000, mFSTSP Heuristic, 4, -1, True, True, 1, 1 
+20170606T123441157583, 101, 5.000000, mFSTSP Heuristic, 4, -1, True, True, 5, 1 
 
-Objective Function Value: 8186.301715 
+Objective Function Value: 8487.309365 
 
 Assignments: 
-vehicleID, vehicleType, activityType, startTime, startNode, endTime, endNode, Description, Status 
-1, Truck, Truck is stationary with UAV(s) on board, -0.000000, 0, 60.000000, 0, Launching UAV 2, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 60.000000, 0, 120.000000, 0, Launching UAV 4, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 120.000000, 0, 180.000000, 0, Launching UAV 3, UAV Launch 
-1, Truck, Truck travels with UAV(s) on board, 180.000000, 0, 487.152861, 20, Travel from node 0 to node 20, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 487.152861, 20, 517.152861, 20, Retrieving UAV 2, UAV Recovery 
-1, Truck, Truck is stationary with UAV(s) on board, 517.152861, 20, 547.152861, 20, Dropping off package to Customer 20, Making Delivery 
-1, Truck, Truck is stationary with UAV(s) on board, 547.152861, 20, 577.152861, 20, Retrieving UAV 4, UAV Recovery 
-1, Truck, Truck is stationary with UAV(s) on board, 577.152861, 20, 607.152861, 20, Retrieving UAV 3, UAV Recovery 
-1, Truck, Truck travels with UAV(s) on board, 607.152861, 20, 688.679183, 42, Travel from node 20 to node 42, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 688.679183, 42, 718.679183, 42, Dropping off package to Customer 42, Making Delivery 
-1, Truck, Truck travels with UAV(s) on board, 718.679183, 42, 788.210197, 33, Travel from node 42 to node 33, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 788.210197, 33, 818.210197, 33, Dropping off package to Customer 33, Making Delivery 
-1, Truck, Truck is stationary with UAV(s) on board, 818.210197, 33, 878.210197, 33, Launching UAV 2, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 878.210197, 33, 938.210197, 33, Launching UAV 3, UAV Launch 
-1, Truck, Truck travels with UAV(s) on board, 938.210197, 33, 1142.324502, 3, Travel from node 33 to node 3, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 1142.324502, 3, 1172.324502, 3, Dropping off package to Customer 3, Making Delivery 
-1, Truck, Truck is stationary with UAV(s) on board, 1172.324501, 3, 1202.324501, 3, Retrieving UAV 3, UAV Recovery 
-1, Truck, Truck is stationary with UAV(s) on board, 1202.324501, 3, 1232.324501, 3, Retrieving UAV 2, UAV Recovery 
-1, Truck, Truck travels with UAV(s) on board, 1232.324501, 3, 1349.757733, 17, Travel from node 3 to node 17, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 1349.757733, 17, 1379.757733, 17, Dropping off package to Customer 17, Making Delivery 
-1, Truck, Truck is stationary with UAV(s) on board, 1379.757733, 17, 1439.757733, 17, Launching UAV 3, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 1439.757733, 17, 1499.757733, 17, Launching UAV 2, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 1499.757733, 17, 1559.757733, 17, Launching UAV 4, UAV Launch 
-1, Truck, Truck travels with UAV(s) on board, 1559.757733, 17, 2106.324405, 32, Travel from node 17 to node 32, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 2106.324405, 32, 2136.324405, 32, Retrieving UAV 3, UAV Recovery 
-1, Truck, Truck is stationary with UAV(s) on board, 2136.324405, 32, 2166.324405, 32, Retrieving UAV 2, UAV Recovery 
-1, Truck, Truck is stationary with UAV(s) on board, 2166.324405, 32, 2196.324405, 32, Retrieving UAV 4, UAV Recovery 
-1, Truck, Truck is stationary with UAV(s) on board, 2196.324405, 32, 2256.324405, 32, Launching UAV 2, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 2256.324405, 32, 2286.324405, 32, Dropping off package to Customer 32, Making Delivery 
-1, Truck, Truck travels with UAV(s) on board, 2286.324405, 32, 2906.998734, 37, Travel from node 32 to node 37, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 2906.998734, 37, 2966.998734, 37, Launching UAV 4, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 2966.998734, 37, 3026.998734, 37, Launching UAV 5, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 3026.998734, 37, 3056.998734, 37, Retrieving UAV 2, UAV Recovery 
-1, Truck, Truck is stationary with UAV(s) on board, 3056.998734, 37, 3116.998734, 37, Launching UAV 2, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 3116.998734, 37, 3176.998734, 37, Launching UAV 3, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 3176.998734, 37, 3206.998734, 37, Dropping off package to Customer 37, Making Delivery 
-1, Truck, Truck travels with no UAVs on board, 3206.998734, 37, 3459.268080, 23, Travel from node 37 to node 23, Traveling 
-1, Truck, Truck is stationary with no UAVs on board, 3459.268080, 23, 3489.268080, 23, Retrieving UAV 2, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 3489.268080, 23, 3549.268080, 23, Launching UAV 2, UAV Launch 
-1, Truck, Truck is stationary with no UAVs on board, 3549.268080, 23, 3579.268080, 23, Retrieving UAV 5, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 3579.268080, 23, 3609.268080, 23, Retrieving UAV 3, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 3609.268080, 23, 3639.268080, 23, Dropping off package to Customer 23, Making Delivery 
-1, Truck, Truck is stationary with no UAVs on board, 3639.268080, 23, 3669.268080, 23, Retrieving UAV 4, UAV Recovery 
-1, Truck, Truck travels with UAV(s) on board, 3669.268080, 23, 3755.310867, 15, Travel from node 23 to node 15, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 3755.310867, 15, 3785.310867, 15, Dropping off package to Customer 15, Making Delivery 
-1, Truck, Truck is stationary with UAV(s) on board, 3785.310867, 15, 3845.310867, 15, Launching UAV 5, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 3845.310867, 15, 3905.310867, 15, Launching UAV 4, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 3905.310867, 15, 3935.310867, 15, Retrieving UAV 2, UAV Recovery 
-1, Truck, Truck is stationary with UAV(s) on board, 3935.310867, 15, 3995.310867, 15, Launching UAV 2, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 3995.310867, 15, 4055.310867, 15, Launching UAV 3, UAV Launch 
-1, Truck, Truck travels with no UAVs on board, 4055.310867, 15, 4523.603081, 2, Travel from node 15 to node 2, Traveling 
-1, Truck, Truck is stationary with no UAVs on board, 4523.603081, 2, 4553.603081, 2, Retrieving UAV 2, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 4553.603081, 2, 4583.603081, 2, Retrieving UAV 3, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 4583.603081, 2, 4643.603081, 2, Launching UAV 2, UAV Launch 
-1, Truck, Truck is stationary with no UAVs on board, 4643.603081, 2, 4673.603081, 2, Retrieving UAV 4, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 4673.603081, 2, 4703.603081, 2, Dropping off package to Customer 2, Making Delivery 
-1, Truck, Truck is stationary with no UAVs on board, 4703.603081, 2, 4733.603081, 2, Retrieving UAV 5, UAV Recovery 
-1, Truck, Truck travels with UAV(s) on board, 4733.603081, 2, 4757.072738, 25, Travel from node 2 to node 25, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 4757.072738, 25, 4787.072738, 25, Dropping off package to Customer 25, Making Delivery 
-1, Truck, Truck is stationary with UAV(s) on board, 4787.072738, 25, 4847.072738, 25, Launching UAV 4, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 4847.072738, 25, 4907.072738, 25, Launching UAV 5, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 4907.072738, 25, 4967.072738, 25, Launching UAV 3, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 4967.072738, 25, 5011.469716, 25, Idle for  44 seconds, Idle 
-1, Truck, Truck is stationary with UAV(s) on board, 5011.469716, 25, 5041.469716, 25, Retrieving UAV 2, UAV Recovery 
-1, Truck, Truck is stationary with UAV(s) on board, 5041.469716, 25, 5101.469716, 25, Launching UAV 2, UAV Launch 
-1, Truck, Truck travels with no UAVs on board, 5101.469716, 25, 5357.710215, 45, Travel from node 25 to node 45, Traveling 
-1, Truck, Truck is stationary with no UAVs on board, 5357.710215, 45, 5387.710215, 45, Dropping off package to Customer 45, Making Delivery 
-1, Truck, Truck is stationary with no UAVs on board, 5387.710215, 45, 5417.710215, 45, Retrieving UAV 3, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 5417.710215, 45, 5447.710215, 45, Retrieving UAV 5, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 5447.710215, 45, 5477.710215, 45, Retrieving UAV 2, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 5477.710215, 45, 5507.710215, 45, Retrieving UAV 4, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 5507.710215, 45, 5567.710215, 45, Launching UAV 2, UAV Launch 
-1, Truck, Truck travels with UAV(s) on board, 5567.710215, 45, 6071.422700, 14, Travel from node 45 to node 14, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 6071.422700, 14, 6101.422700, 14, Dropping off package to Customer 14, Making Delivery 
-1, Truck, Truck is stationary with UAV(s) on board, 6101.422700, 14, 6131.422700, 14, Retrieving UAV 2, UAV Recovery 
-1, Truck, Truck travels with UAV(s) on board, 6131.422700, 14, 6214.619040, 10, Travel from node 14 to node 10, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 6214.619040, 10, 6274.619040, 10, Launching UAV 3, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 6274.619040, 10, 6304.619040, 10, Dropping off package to Customer 10, Making Delivery 
-1, Truck, Truck is stationary with UAV(s) on board, 6304.619040, 10, 6364.619040, 10, Launching UAV 5, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 6364.619040, 10, 6424.619040, 10, Launching UAV 4, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 6424.619040, 10, 6484.619040, 10, Launching UAV 2, UAV Launch 
-1, Truck, Truck travels with no UAVs on board, 6484.619040, 10, 6844.084407, 26, Travel from node 10 to node 26, Traveling 
-1, Truck, Truck is stationary with no UAVs on board, 6844.084407, 26, 6874.084407, 26, Retrieving UAV 5, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 6874.084407, 26, 6904.084407, 26, Retrieving UAV 3, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 6904.084407, 26, 6934.084407, 26, Dropping off package to Customer 26, Making Delivery 
-1, Truck, Truck is stationary with no UAVs on board, 6934.084407, 26, 6964.084407, 26, Retrieving UAV 2, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 6964.084407, 26, 6994.084407, 26, Retrieving UAV 4, UAV Recovery 
-1, Truck, Truck travels with UAV(s) on board, 6994.084407, 26, 7098.712972, 30, Travel from node 26 to node 30, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 7098.712972, 30, 7128.712972, 30, Dropping off package to Customer 30, Making Delivery 
-1, Truck, Truck travels with UAV(s) on board, 7128.712972, 30, 7260.523946, 48, Travel from node 30 to node 48, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 7260.523946, 48, 7320.523946, 48, Launching UAV 2, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 7320.523946, 48, 7380.523946, 48, Launching UAV 3, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 7380.523946, 48, 7440.523946, 48, Launching UAV 4, UAV Launch 
-1, Truck, Truck is stationary with UAV(s) on board, 7440.523946, 48, 7470.523946, 48, Dropping off package to Customer 48, Making Delivery 
-1, Truck, Truck is stationary with UAV(s) on board, 7470.523946, 48, 7530.523946, 48, Launching UAV 5, UAV Launch 
-1, Truck, Truck travels with no UAVs on board, 7530.523946, 48, 7935.772214, 7, Travel from node 48 to node 7, Traveling 
-1, Truck, Truck is stationary with no UAVs on board, 7935.772214, 7, 7965.772214, 7, Retrieving UAV 2, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 7965.772214, 7, 7995.772214, 7, Retrieving UAV 4, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 7995.772214, 7, 8025.772214, 7, Retrieving UAV 5, UAV Recovery 
-1, Truck, Truck is stationary with no UAVs on board, 8025.772214, 7, 8055.772214, 7, Dropping off package to Customer 7, Making Delivery 
-1, Truck, Truck is stationary with no UAVs on board, 8055.772214, 7, 8085.772214, 7, Retrieving UAV 3, UAV Recovery 
-1, Truck, Truck travels with UAV(s) on board, 8085.772214, 7, 8186.301715, 51, Travel from node 7 to node 51, Traveling 
-1, Truck, Truck is stationary with UAV(s) on board, 8186.301715, 51, -1.000000, 51, At the Depot.  Total Time = 2:16:26, Vehicle Tasks Complete 
-2, UAV, UAV is stationary with a parcel, -0.000000, 0, 60.000000, 0, Prepare to launch from truck, UAV Launch 
-2, UAV, UAV taking off or landing with a parcel, 60.000000, 0, 63.695623, 0, Takeoff from Depot, Traveling 
-2, UAV, UAV travels with parcel, 63.695623, 0, 163.636828, 27, Fly to UAV customer 27, Traveling 
-2, UAV, UAV taking off or landing with a parcel, 163.636828, 27, 170.028074, 27, Land at UAV customer 27, Traveling 
-2, UAV, UAV is stationary with a parcel, 170.028074, 27, 230.028074, 27, Serving UAV customer 27, Making Delivery 
-2, UAV, UAV taking off or landing with no parcels, 230.028074, 27, 233.723698, 27, Takeoff from UAV customer 27, Traveling 
-2, UAV, UAV travels empty, 233.723698, 27, 436.390508, 20, Fly to truck at customer 20, Traveling 
-2, UAV, UAV is stationary without a parcel, 436.390508, 20, 480.761614, 20, Idle above rendezvous location (customer 20), Idle 
-2, UAV, UAV taking off or landing with no parcels, 480.761614, 20, 487.152861, 20, Land at truck rendezvous location (customer 20), Traveling 
-2, UAV, UAV is stationary without a parcel, 487.152861, 20, 517.152861, 20, Recovered by truck at customer 20, UAV Recovery 
-2, UAV, UAV is stationary with a parcel, 818.210197, 33, 878.210197, 33, Prepare to launch from truck, UAV Launch 
-2, UAV, UAV taking off or landing with a parcel, 878.210197, 33, 881.905820, 33, Takeoff from truck at Customer 33, Traveling 
-2, UAV, UAV travels with parcel, 881.905820, 33, 965.377888, 43, Fly to UAV customer 43, Traveling 
-2, UAV, UAV taking off or landing with a parcel, 965.377888, 43, 971.769134, 43, Land at UAV customer 43, Traveling 
-2, UAV, UAV is stationary with a parcel, 971.769134, 43, 1031.769134, 43, Serving UAV customer 43, Making Delivery 
-2, UAV, UAV taking off or landing with no parcels, 1031.769134, 43, 1035.464758, 43, Takeoff from UAV customer 43, Traveling 
-2, UAV, UAV travels empty, 1035.464758, 43, 1112.887404, 3, Fly to truck at customer 3, Traveling 
-2, UAV, UAV is stationary without a parcel, 1112.887404, 3, 1195.933255, 3, Idle above rendezvous location (customer 3), Idle 
-2, UAV, UAV taking off or landing with no parcels, 1195.933255, 3, 1202.324501, 3, Land at truck rendezvous location (customer 3), Traveling 
-2, UAV, UAV is stationary without a parcel, 1202.324501, 3, 1232.324501, 3, Recovered by truck at customer 3, UAV Recovery 
-2, UAV, UAV is stationary with a parcel, 1439.757733, 17, 1499.757733, 17, Prepare to launch from truck, UAV Launch 
-2, UAV, UAV taking off or landing with a parcel, 1499.757733, 17, 1503.453356, 17, Takeoff from truck at Customer 17, Traveling 
-2, UAV, UAV travels with parcel, 1503.453356, 17, 1699.423458, 11, Fly to UAV customer 11, Traveling 
-2, UAV, UAV taking off or landing with a parcel, 1699.423458, 11, 1705.814705, 11, Land at UAV customer 11, Traveling 
-2, UAV, UAV is stationary with a parcel, 1705.814705, 11, 1765.814705, 11, Serving UAV customer 11, Making Delivery 
-2, UAV, UAV taking off or landing with no parcels, 1765.814705, 11, 1769.510328, 11, Takeoff from UAV customer 11, Traveling 
-2, UAV, UAV travels empty, 1769.510328, 11, 1814.738859, 32, Fly to truck at customer 32, Traveling 
-2, UAV, UAV is stationary without a parcel, 1814.738859, 32, 2129.933159, 32, Idle above rendezvous location (customer 32), Idle 
-2, UAV, UAV taking off or landing with no parcels, 2129.933159, 32, 2136.324405, 32, Land at truck rendezvous location (customer 32), Traveling 
-2, UAV, UAV is stationary without a parcel, 2136.324405, 32, 2166.324405, 32, Recovered by truck at customer 32, UAV Recovery 
-2, UAV, UAV is stationary with a parcel, 2196.324405, 32, 2256.324405, 32, Prepare to launch from truck, UAV Launch 
-2, UAV, UAV taking off or landing with a parcel, 2256.324405, 32, 2260.020028, 32, Takeoff from truck at Customer 32, Traveling 
-2, UAV, UAV travels with parcel, 2260.020028, 32, 2412.027773, 44, Fly to UAV customer 44, Traveling 
-2, UAV, UAV taking off or landing with a parcel, 2412.027773, 44, 2418.419019, 44, Land at UAV customer 44, Traveling 
-2, UAV, UAV is stationary with a parcel, 2418.419019, 44, 2478.419019, 44, Serving UAV customer 44, Making Delivery 
-2, UAV, UAV taking off or landing with no parcels, 2478.419019, 44, 2482.114643, 44, Takeoff from UAV customer 44, Traveling 
-2, UAV, UAV travels empty, 2482.114643, 44, 2524.748165, 37, Fly to truck at customer 37, Traveling 
-2, UAV, UAV is stationary without a parcel, 2524.748165, 37, 3020.607488, 37, Idle above rendezvous location (customer 37), Idle 
-2, UAV, UAV taking off or landing with no parcels, 3020.607488, 37, 3026.998734, 37, Land at truck rendezvous location (customer 37), Traveling 
-2, UAV, UAV is stationary without a parcel, 3026.998734, 37, 3056.998734, 37, Recovered by truck at customer 37, UAV Recovery 
-2, UAV, UAV is stationary with a parcel, 3056.998734, 37, 3116.998734, 37, Prepare to launch from truck, UAV Launch 
-2, UAV, UAV taking off or landing with a parcel, 3116.998734, 37, 3120.694357, 37, Takeoff from truck at Customer 37, Traveling 
-2, UAV, UAV travels with parcel, 3120.694357, 37, 3244.657099, 18, Fly to UAV customer 18, Traveling 
-2, UAV, UAV taking off or landing with a parcel, 3244.657099, 18, 3251.048346, 18, Land at UAV customer 18, Traveling 
-2, UAV, UAV is stationary with a parcel, 3251.048346, 18, 3311.048346, 18, Serving UAV customer 18, Making Delivery 
-2, UAV, UAV taking off or landing with no parcels, 3311.048346, 18, 3314.743969, 18, Takeoff from UAV customer 18, Traveling 
-2, UAV, UAV travels empty, 3314.743969, 18, 3420.269968, 23, Fly to truck at customer 23, Traveling 
-2, UAV, UAV is stationary without a parcel, 3420.269968, 23, 3452.876834, 23, Idle above rendezvous location (customer 23), Idle 
-2, UAV, UAV taking off or landing with no parcels, 3452.876834, 23, 3459.268080, 23, Land at truck rendezvous location (customer 23), Traveling 
-2, UAV, UAV is stationary without a parcel, 3459.268080, 23, 3489.268080, 23, Recovered by truck at customer 23, UAV Recovery 
-2, UAV, UAV is stationary with a parcel, 3489.268080, 23, 3549.268080, 23, Prepare to launch from truck, UAV Launch 
-2, UAV, UAV taking off or landing with a parcel, 3549.268080, 23, 3552.963703, 23, Takeoff from truck at Customer 23, Traveling 
-2, UAV, UAV travels with parcel, 3552.963703, 23, 3697.262948, 50, Fly to UAV customer 50, Traveling 
-2, UAV, UAV taking off or landing with a parcel, 3697.262948, 50, 3703.654194, 50, Land at UAV customer 50, Traveling 
-2, UAV, UAV is stationary with a parcel, 3703.654194, 50, 3763.654194, 50, Serving UAV customer 50, Making Delivery 
-2, UAV, UAV taking off or landing with no parcels, 3763.654194, 50, 3767.349818, 50, Takeoff from UAV customer 50, Traveling 
-2, UAV, UAV travels empty, 3767.349818, 50, 3879.670229, 15, Fly to truck at customer 15, Traveling 
-2, UAV, UAV is stationary without a parcel, 3879.670229, 15, 3898.919621, 15, Idle above rendezvous location (customer 15), Idle 
-2, UAV, UAV taking off or landing with no parcels, 3898.919621, 15, 3905.310867, 15, Land at truck rendezvous location (customer 15), Traveling 
-2, UAV, UAV is stationary without a parcel, 3905.310867, 15, 3935.310867, 15, Recovered by truck at customer 15, UAV Recovery 
-2, UAV, UAV is stationary with a parcel, 3935.310867, 15, 3995.310867, 15, Prepare to launch from truck, UAV Launch 
-2, UAV, UAV taking off or landing with a parcel, 3995.310867, 15, 3999.006490, 15, Takeoff from truck at Customer 15, Traveling 
-2, UAV, UAV travels with parcel, 3999.006490, 15, 4132.467078, 13, Fly to UAV customer 13, Traveling 
-2, UAV, UAV taking off or landing with a parcel, 4132.467078, 13, 4138.858325, 13, Land at UAV customer 13, Traveling 
-2, UAV, UAV is stationary with a parcel, 4138.858325, 13, 4198.858325, 13, Serving UAV customer 13, Making Delivery 
-2, UAV, UAV taking off or landing with no parcels, 4198.858325, 13, 4202.553948, 13, Takeoff from UAV customer 13, Traveling 
-2, UAV, UAV travels empty, 4202.553948, 13, 4353.454964, 2, Fly to truck at customer 2, Traveling 
-2, UAV, UAV is stationary without a parcel, 4353.454964, 2, 4517.211835, 2, Idle above rendezvous location (customer 2), Idle 
-2, UAV, UAV taking off or landing with no parcels, 4517.211835, 2, 4523.603081, 2, Land at truck rendezvous location (customer 2), Traveling 
-2, UAV, UAV is stationary without a parcel, 4523.603081, 2, 4553.603081, 2, Recovered by truck at customer 2, UAV Recovery 
-2, UAV, UAV is stationary with a parcel, 4583.603081, 2, 4643.603081, 2, Prepare to launch from truck, UAV Launch 
-2, UAV, UAV taking off or landing with a parcel, 4643.603081, 2, 4647.298704, 2, Takeoff from truck at Customer 2, Traveling 
-2, UAV, UAV travels with parcel, 4647.298704, 2, 4793.498427, 41, Fly to UAV customer 41, Traveling 
-2, UAV, UAV taking off or landing with a parcel, 4793.498427, 41, 4799.889673, 41, Land at UAV customer 41, Traveling 
-2, UAV, UAV is stationary with a parcel, 4799.889673, 41, 4859.889673, 41, Serving UAV customer 41, Making Delivery 
-2, UAV, UAV taking off or landing with no parcels, 4859.889673, 41, 4863.585296, 41, Takeoff from UAV customer 41, Traveling 
-2, UAV, UAV travels empty, 4863.585296, 41, 5005.078470, 25, Fly to truck at customer 25, Traveling 
-2, UAV, UAV taking off or landing with no parcels, 5005.078470, 25, 5011.469716, 25, Land at truck rendezvous location (customer 25), Traveling 
-2, UAV, UAV is stationary without a parcel, 5011.469716, 25, 5041.469716, 25, Recovered by truck at customer 25, UAV Recovery 
-2, UAV, UAV is stationary with a parcel, 5041.469716, 25, 5101.469716, 25, Prepare to launch from truck, UAV Launch 
-2, UAV, UAV taking off or landing with a parcel, 5101.469716, 25, 5105.165339, 25, Takeoff from truck at Customer 25, Traveling 
-2, UAV, UAV travels with parcel, 5105.165339, 25, 5242.228529, 19, Fly to UAV customer 19, Traveling 
-2, UAV, UAV taking off or landing with a parcel, 5242.228529, 19, 5248.619776, 19, Land at UAV customer 19, Traveling 
-2, UAV, UAV is stationary with a parcel, 5248.619776, 19, 5308.619776, 19, Serving UAV customer 19, Making Delivery 
-2, UAV, UAV taking off or landing with no parcels, 5308.619776, 19, 5312.315399, 19, Takeoff from UAV customer 19, Traveling 
-2, UAV, UAV travels empty, 5312.315399, 19, 5413.030507, 45, Fly to truck at customer 45, Traveling 
-2, UAV, UAV is stationary without a parcel, 5413.030507, 45, 5441.318969, 45, Idle above rendezvous location (customer 45), Idle 
-2, UAV, UAV taking off or landing with no parcels, 5441.318969, 45, 5447.710215, 45, Land at truck rendezvous location (customer 45), Traveling 
-2, UAV, UAV is stationary without a parcel, 5447.710215, 45, 5477.710215, 45, Recovered by truck at customer 45, UAV Recovery 
-2, UAV, UAV is stationary with a parcel, 5507.710215, 45, 5567.710215, 45, Prepare to launch from truck, UAV Launch 
-2, UAV, UAV taking off or landing with a parcel, 5567.710215, 45, 5571.405838, 45, Takeoff from truck at Customer 45, Traveling 
-2, UAV, UAV travels with parcel, 5571.405838, 45, 5628.411467, 6, Fly to UAV customer 6, Traveling 
-2, UAV, UAV taking off or landing with a parcel, 5628.411467, 6, 5634.802713, 6, Land at UAV customer 6, Traveling 
-2, UAV, UAV is stationary with a parcel, 5634.802713, 6, 5694.802713, 6, Serving UAV customer 6, Making Delivery 
-2, UAV, UAV taking off or landing with no parcels, 5694.802713, 6, 5698.498337, 6, Takeoff from UAV customer 6, Traveling 
-2, UAV, UAV travels empty, 5698.498337, 6, 5903.555590, 14, Fly to truck at customer 14, Traveling 
-2, UAV, UAV is stationary without a parcel, 5903.555590, 14, 6095.031454, 14, Idle above rendezvous location (customer 14), Idle 
-2, UAV, UAV taking off or landing with no parcels, 6095.031454, 14, 6101.422700, 14, Land at truck rendezvous location (customer 14), Traveling 
-2, UAV, UAV is stationary without a parcel, 6101.422700, 14, 6131.422700, 14, Recovered by truck at customer 14, UAV Recovery 
-2, UAV, UAV is stationary with a parcel, 6424.619040, 10, 6484.619040, 10, Prepare to launch from truck, UAV Launch 
-2, UAV, UAV taking off or landing with a parcel, 6484.619040, 10, 6488.314663, 10, Takeoff from truck at Customer 10, Traveling 
-2, UAV, UAV travels with parcel, 6488.314663, 10, 6610.536390, 1, Fly to UAV customer 1, Traveling 
-2, UAV, UAV taking off or landing with a parcel, 6610.536390, 1, 6616.927636, 1, Land at UAV customer 1, Traveling 
-2, UAV, UAV is stationary with a parcel, 6616.927636, 1, 6676.927636, 1, Serving UAV customer 1, Making Delivery 
-2, UAV, UAV taking off or landing with no parcels, 6676.927636, 1, 6680.623260, 1, Takeoff from UAV customer 1, Traveling 
-2, UAV, UAV travels empty, 6680.623260, 1, 6853.995708, 26, Fly to truck at customer 26, Traveling 
-2, UAV, UAV is stationary without a parcel, 6853.995708, 26, 6927.693161, 26, Idle above rendezvous location (customer 26), Idle 
-2, UAV, UAV taking off or landing with no parcels, 6927.693161, 26, 6934.084407, 26, Land at truck rendezvous location (customer 26), Traveling 
-2, UAV, UAV is stationary without a parcel, 6934.084407, 26, 6964.084407, 26, Recovered by truck at customer 26, UAV Recovery 
-2, UAV, UAV is stationary with a parcel, 7260.523946, 48, 7320.523946, 48, Prepare to launch from truck, UAV Launch 
-2, UAV, UAV taking off or landing with a parcel, 7320.523946, 48, 7324.219569, 48, Takeoff from truck at Customer 48, Traveling 
-2, UAV, UAV travels with parcel, 7324.219569, 48, 7465.748943, 16, Fly to UAV customer 16, Traveling 
-2, UAV, UAV taking off or landing with a parcel, 7465.748943, 16, 7472.140189, 16, Land at UAV customer 16, Traveling 
-2, UAV, UAV is stationary with a parcel, 7472.140189, 16, 7532.140189, 16, Serving UAV customer 16, Making Delivery 
-2, UAV, UAV taking off or landing with no parcels, 7532.140189, 16, 7535.835812, 16, Takeoff from UAV customer 16, Traveling 
-2, UAV, UAV travels empty, 7535.835812, 16, 7606.878337, 7, Fly to truck at customer 7, Traveling 
-2, UAV, UAV is stationary without a parcel, 7606.878337, 7, 7929.380968, 7, Idle above rendezvous location (customer 7), Idle 
-2, UAV, UAV taking off or landing with no parcels, 7929.380968, 7, 7935.772214, 7, Land at truck rendezvous location (customer 7), Traveling 
-2, UAV, UAV is stationary without a parcel, 7935.772214, 7, 7965.772214, 7, Recovered by truck at customer 7, UAV Recovery 
-3, UAV, UAV is stationary with a parcel, 120.000000, 0, 180.000000, 0, Prepare to launch from truck, UAV Launch 
-3, UAV, UAV taking off or landing with a parcel, 180.000000, 0, 183.695623, 0, Takeoff from Depot, Traveling 
-3, UAV, UAV travels with parcel, 183.695623, 0, 295.006866, 8, Fly to UAV customer 8, Traveling 
-3, UAV, UAV taking off or landing with a parcel, 295.006866, 8, 301.398113, 8, Land at UAV customer 8, Traveling 
-3, UAV, UAV is stationary with a parcel, 301.398113, 8, 361.398113, 8, Serving UAV customer 8, Making Delivery 
-3, UAV, UAV taking off or landing with no parcels, 361.398113, 8, 365.093736, 8, Takeoff from UAV customer 8, Traveling 
-3, UAV, UAV travels empty, 365.093736, 8, 432.982556, 20, Fly to truck at customer 20, Traveling 
-3, UAV, UAV is stationary without a parcel, 432.982556, 20, 570.761614, 20, Idle above rendezvous location (customer 20), Idle 
-3, UAV, UAV taking off or landing with no parcels, 570.761614, 20, 577.152861, 20, Land at truck rendezvous location (customer 20), Traveling 
-3, UAV, UAV is stationary without a parcel, 577.152861, 20, 607.152861, 20, Recovered by truck at customer 20, UAV Recovery 
-3, UAV, UAV is stationary with a parcel, 878.210197, 33, 938.210197, 33, Prepare to launch from truck, UAV Launch 
-3, UAV, UAV taking off or landing with a parcel, 938.210197, 33, 941.905820, 33, Takeoff from truck at Customer 33, Traveling 
-3, UAV, UAV travels with parcel, 941.905820, 33, 997.082920, 31, Fly to UAV customer 31, Traveling 
-3, UAV, UAV taking off or landing with a parcel, 997.082920, 31, 1003.474166, 31, Land at UAV customer 31, Traveling 
-3, UAV, UAV is stationary with a parcel, 1003.474166, 31, 1063.474166, 31, Serving UAV customer 31, Making Delivery 
-3, UAV, UAV taking off or landing with no parcels, 1063.474166, 31, 1067.169790, 31, Takeoff from UAV customer 31, Traveling 
-3, UAV, UAV travels empty, 1067.169790, 31, 1131.421038, 3, Fly to truck at customer 3, Traveling 
-3, UAV, UAV is stationary without a parcel, 1131.421038, 3, 1165.933255, 3, Idle above rendezvous location (customer 3), Idle 
-3, UAV, UAV taking off or landing with no parcels, 1165.933255, 3, 1172.324501, 3, Land at truck rendezvous location (customer 3), Traveling 
-3, UAV, UAV is stationary without a parcel, 1172.324501, 3, 1202.324501, 3, Recovered by truck at customer 3, UAV Recovery 
-3, UAV, UAV is stationary with a parcel, 1379.757733, 17, 1439.757733, 17, Prepare to launch from truck, UAV Launch 
-3, UAV, UAV taking off or landing with a parcel, 1439.757733, 17, 1443.453356, 17, Takeoff from truck at Customer 17, Traveling 
-3, UAV, UAV travels with parcel, 1443.453356, 17, 1525.559667, 24, Fly to UAV customer 24, Traveling 
-3, UAV, UAV taking off or landing with a parcel, 1525.559667, 24, 1531.950914, 24, Land at UAV customer 24, Traveling 
-3, UAV, UAV is stationary with a parcel, 1531.950914, 24, 1591.950914, 24, Serving UAV customer 24, Making Delivery 
-3, UAV, UAV taking off or landing with no parcels, 1591.950914, 24, 1595.646537, 24, Takeoff from UAV customer 24, Traveling 
-3, UAV, UAV travels empty, 1595.646537, 24, 1758.872261, 32, Fly to truck at customer 32, Traveling 
-3, UAV, UAV is stationary without a parcel, 1758.872261, 32, 2099.933159, 32, Idle above rendezvous location (customer 32), Idle 
-3, UAV, UAV taking off or landing with no parcels, 2099.933159, 32, 2106.324405, 32, Land at truck rendezvous location (customer 32), Traveling 
-3, UAV, UAV is stationary without a parcel, 2106.324405, 32, 2136.324405, 32, Recovered by truck at customer 32, UAV Recovery 
-3, UAV, UAV is stationary with a parcel, 3116.998734, 37, 3176.998734, 37, Prepare to launch from truck, UAV Launch 
-3, UAV, UAV taking off or landing with a parcel, 3176.998734, 37, 3180.694357, 37, Takeoff from truck at Customer 37, Traveling 
-3, UAV, UAV travels with parcel, 3180.694357, 37, 3347.282840, 40, Fly to UAV customer 40, Traveling 
-3, UAV, UAV taking off or landing with a parcel, 3347.282840, 40, 3353.674087, 40, Land at UAV customer 40, Traveling 
-3, UAV, UAV is stationary with a parcel, 3353.674087, 40, 3413.674087, 40, Serving UAV customer 40, Making Delivery 
-3, UAV, UAV taking off or landing with no parcels, 3413.674087, 40, 3417.369710, 40, Takeoff from UAV customer 40, Traveling 
-3, UAV, UAV travels empty, 3417.369710, 40, 3545.703965, 23, Fly to truck at customer 23, Traveling 
-3, UAV, UAV is stationary without a parcel, 3545.703965, 23, 3572.876834, 23, Idle above rendezvous location (customer 23), Idle 
-3, UAV, UAV taking off or landing with no parcels, 3572.876834, 23, 3579.268080, 23, Land at truck rendezvous location (customer 23), Traveling 
-3, UAV, UAV is stationary without a parcel, 3579.268080, 23, 3609.268080, 23, Recovered by truck at customer 23, UAV Recovery 
-3, UAV, UAV is stationary with a parcel, 3995.310867, 15, 4055.310867, 15, Prepare to launch from truck, UAV Launch 
-3, UAV, UAV taking off or landing with a parcel, 4055.310867, 15, 4059.006490, 15, Takeoff from truck at Customer 15, Traveling 
-3, UAV, UAV travels with parcel, 4059.006490, 15, 4124.830288, 21, Fly to UAV customer 21, Traveling 
-3, UAV, UAV taking off or landing with a parcel, 4124.830288, 21, 4131.221535, 21, Land at UAV customer 21, Traveling 
-3, UAV, UAV is stationary with a parcel, 4131.221535, 21, 4191.221535, 21, Serving UAV customer 21, Making Delivery 
-3, UAV, UAV taking off or landing with no parcels, 4191.221535, 21, 4194.917158, 21, Takeoff from UAV customer 21, Traveling 
-3, UAV, UAV travels empty, 4194.917158, 21, 4422.660034, 2, Fly to truck at customer 2, Traveling 
-3, UAV, UAV is stationary without a parcel, 4422.660034, 2, 4547.211835, 2, Idle above rendezvous location (customer 2), Idle 
-3, UAV, UAV taking off or landing with no parcels, 4547.211835, 2, 4553.603081, 2, Land at truck rendezvous location (customer 2), Traveling 
-3, UAV, UAV is stationary without a parcel, 4553.603081, 2, 4583.603081, 2, Recovered by truck at customer 2, UAV Recovery 
-3, UAV, UAV is stationary with a parcel, 4907.072738, 25, 4967.072738, 25, Prepare to launch from truck, UAV Launch 
-3, UAV, UAV taking off or landing with a parcel, 4967.072738, 25, 4970.768361, 25, Takeoff from truck at Customer 25, Traveling 
-3, UAV, UAV travels with parcel, 4970.768361, 25, 5094.257564, 29, Fly to UAV customer 29, Traveling 
-3, UAV, UAV taking off or landing with a parcel, 5094.257564, 29, 5100.648811, 29, Land at UAV customer 29, Traveling 
-3, UAV, UAV is stationary with a parcel, 5100.648811, 29, 5160.648811, 29, Serving UAV customer 29, Making Delivery 
-3, UAV, UAV taking off or landing with no parcels, 5160.648811, 29, 5164.344434, 29, Takeoff from UAV customer 29, Traveling 
-3, UAV, UAV travels empty, 5164.344434, 29, 5280.957214, 45, Fly to truck at customer 45, Traveling 
-3, UAV, UAV is stationary without a parcel, 5280.957214, 45, 5381.318969, 45, Idle above rendezvous location (customer 45), Idle 
-3, UAV, UAV taking off or landing with no parcels, 5381.318969, 45, 5387.710215, 45, Land at truck rendezvous location (customer 45), Traveling 
-3, UAV, UAV is stationary without a parcel, 5387.710215, 45, 5417.710215, 45, Recovered by truck at customer 45, UAV Recovery 
-3, UAV, UAV is stationary with a parcel, 6214.619040, 10, 6274.619040, 10, Prepare to launch from truck, UAV Launch 
-3, UAV, UAV taking off or landing with a parcel, 6274.619040, 10, 6278.314663, 10, Takeoff from truck at Customer 10, Traveling 
-3, UAV, UAV travels with parcel, 6278.314663, 10, 6395.174956, 47, Fly to UAV customer 47, Traveling 
-3, UAV, UAV taking off or landing with a parcel, 6395.174956, 47, 6401.566203, 47, Land at UAV customer 47, Traveling 
-3, UAV, UAV is stationary with a parcel, 6401.566203, 47, 6461.566203, 47, Serving UAV customer 47, Making Delivery 
-3, UAV, UAV taking off or landing with no parcels, 6461.566203, 47, 6465.261826, 47, Takeoff from UAV customer 47, Traveling 
-3, UAV, UAV travels empty, 6465.261826, 47, 6569.073727, 26, Fly to truck at customer 26, Traveling 
-3, UAV, UAV is stationary without a parcel, 6569.073727, 26, 6867.693161, 26, Idle above rendezvous location (customer 26), Idle 
-3, UAV, UAV taking off or landing with no parcels, 6867.693161, 26, 6874.084407, 26, Land at truck rendezvous location (customer 26), Traveling 
-3, UAV, UAV is stationary without a parcel, 6874.084407, 26, 6904.084407, 26, Recovered by truck at customer 26, UAV Recovery 
-3, UAV, UAV is stationary with a parcel, 7320.523946, 48, 7380.523946, 48, Prepare to launch from truck, UAV Launch 
-3, UAV, UAV taking off or landing with a parcel, 7380.523946, 48, 7384.219569, 48, Takeoff from truck at Customer 48, Traveling 
-3, UAV, UAV travels with parcel, 7384.219569, 48, 7460.732429, 36, Fly to UAV customer 36, Traveling 
-3, UAV, UAV taking off or landing with a parcel, 7460.732429, 36, 7467.123675, 36, Land at UAV customer 36, Traveling 
-3, UAV, UAV is stationary with a parcel, 7467.123675, 36, 7527.123675, 36, Serving UAV customer 36, Making Delivery 
-3, UAV, UAV taking off or landing with no parcels, 7527.123675, 36, 7530.819299, 36, Takeoff from UAV customer 36, Traveling 
-3, UAV, UAV travels empty, 7530.819299, 36, 7699.248648, 7, Fly to truck at customer 7, Traveling 
-3, UAV, UAV is stationary without a parcel, 7699.248648, 7, 8049.380968, 7, Idle above rendezvous location (customer 7), Idle 
-3, UAV, UAV taking off or landing with no parcels, 8049.380968, 7, 8055.772214, 7, Land at truck rendezvous location (customer 7), Traveling 
-3, UAV, UAV is stationary without a parcel, 8055.772214, 7, 8085.772214, 7, Recovered by truck at customer 7, UAV Recovery 
-4, UAV, UAV is stationary with a parcel, 60.000000, 0, 120.000000, 0, Prepare to launch from truck, UAV Launch 
-4, UAV, UAV taking off or landing with a parcel, 120.000000, 0, 123.695623, 0, Takeoff from Depot, Traveling 
-4, UAV, UAV travels with parcel, 123.695623, 0, 222.568183, 22, Fly to UAV customer 22, Traveling 
-4, UAV, UAV taking off or landing with a parcel, 222.568183, 22, 228.959429, 22, Land at UAV customer 22, Traveling 
-4, UAV, UAV is stationary with a parcel, 228.959429, 22, 288.959429, 22, Serving UAV customer 22, Making Delivery 
-4, UAV, UAV taking off or landing with no parcels, 288.959429, 22, 292.655053, 22, Takeoff from UAV customer 22, Traveling 
-4, UAV, UAV travels empty, 292.655053, 22, 495.139053, 20, Fly to truck at customer 20, Traveling 
-4, UAV, UAV is stationary without a parcel, 495.139053, 20, 540.761614, 20, Idle above rendezvous location (customer 20), Idle 
-4, UAV, UAV taking off or landing with no parcels, 540.761614, 20, 547.152861, 20, Land at truck rendezvous location (customer 20), Traveling 
-4, UAV, UAV is stationary without a parcel, 547.152861, 20, 577.152861, 20, Recovered by truck at customer 20, UAV Recovery 
-4, UAV, UAV is stationary with a parcel, 1499.757733, 17, 1559.757733, 17, Prepare to launch from truck, UAV Launch 
-4, UAV, UAV taking off or landing with a parcel, 1559.757733, 17, 1563.453356, 17, Takeoff from truck at Customer 17, Traveling 
-4, UAV, UAV travels with parcel, 1563.453356, 17, 1689.187038, 35, Fly to UAV customer 35, Traveling 
-4, UAV, UAV taking off or landing with a parcel, 1689.187038, 35, 1695.578284, 35, Land at UAV customer 35, Traveling 
-4, UAV, UAV is stationary with a parcel, 1695.578284, 35, 1755.578284, 35, Serving UAV customer 35, Making Delivery 
-4, UAV, UAV taking off or landing with no parcels, 1755.578284, 35, 1759.273907, 35, Takeoff from UAV customer 35, Traveling 
-4, UAV, UAV travels empty, 1759.273907, 35, 1869.954069, 32, Fly to truck at customer 32, Traveling 
-4, UAV, UAV is stationary without a parcel, 1869.954069, 32, 2159.933159, 32, Idle above rendezvous location (customer 32), Idle 
-4, UAV, UAV taking off or landing with no parcels, 2159.933159, 32, 2166.324405, 32, Land at truck rendezvous location (customer 32), Traveling 
-4, UAV, UAV is stationary without a parcel, 2166.324405, 32, 2196.324405, 32, Recovered by truck at customer 32, UAV Recovery 
-4, UAV, UAV is stationary with a parcel, 2906.998734, 37, 2966.998734, 37, Prepare to launch from truck, UAV Launch 
-4, UAV, UAV taking off or landing with a parcel, 2966.998734, 37, 2970.694357, 37, Takeoff from truck at Customer 37, Traveling 
-4, UAV, UAV travels with parcel, 2970.694357, 37, 3004.341415, 4, Fly to UAV customer 4, Traveling 
-4, UAV, UAV taking off or landing with a parcel, 3004.341415, 4, 3010.732662, 4, Land at UAV customer 4, Traveling 
-4, UAV, UAV is stationary with a parcel, 3010.732662, 4, 3070.732662, 4, Serving UAV customer 4, Making Delivery 
-4, UAV, UAV taking off or landing with no parcels, 3070.732662, 4, 3074.428285, 4, Takeoff from UAV customer 4, Traveling 
-4, UAV, UAV travels empty, 3074.428285, 4, 3159.620719, 23, Fly to truck at customer 23, Traveling 
-4, UAV, UAV is stationary without a parcel, 3159.620719, 23, 3632.876834, 23, Idle above rendezvous location (customer 23), Idle 
-4, UAV, UAV taking off or landing with no parcels, 3632.876834, 23, 3639.268080, 23, Land at truck rendezvous location (customer 23), Traveling 
-4, UAV, UAV is stationary without a parcel, 3639.268080, 23, 3669.268080, 23, Recovered by truck at customer 23, UAV Recovery 
-4, UAV, UAV is stationary with a parcel, 3845.310867, 15, 3905.310867, 15, Prepare to launch from truck, UAV Launch 
-4, UAV, UAV taking off or landing with a parcel, 3905.310867, 15, 3909.006490, 15, Takeoff from truck at Customer 15, Traveling 
-4, UAV, UAV travels with parcel, 3909.006490, 15, 4071.206546, 28, Fly to UAV customer 28, Traveling 
-4, UAV, UAV taking off or landing with a parcel, 4071.206546, 28, 4077.597793, 28, Land at UAV customer 28, Traveling 
-4, UAV, UAV is stationary with a parcel, 4077.597793, 28, 4137.597793, 28, Serving UAV customer 28, Making Delivery 
-4, UAV, UAV taking off or landing with no parcels, 4137.597793, 28, 4141.293416, 28, Takeoff from UAV customer 28, Traveling 
-4, UAV, UAV travels empty, 4141.293416, 28, 4239.431614, 2, Fly to truck at customer 2, Traveling 
-4, UAV, UAV is stationary without a parcel, 4239.431614, 2, 4637.211835, 2, Idle above rendezvous location (customer 2), Idle 
-4, UAV, UAV taking off or landing with no parcels, 4637.211835, 2, 4643.603081, 2, Land at truck rendezvous location (customer 2), Traveling 
-4, UAV, UAV is stationary without a parcel, 4643.603081, 2, 4673.603081, 2, Recovered by truck at customer 2, UAV Recovery 
-4, UAV, UAV is stationary with a parcel, 4787.072738, 25, 4847.072738, 25, Prepare to launch from truck, UAV Launch 
-4, UAV, UAV taking off or landing with a parcel, 4847.072738, 25, 4850.768361, 25, Takeoff from truck at Customer 25, Traveling 
-4, UAV, UAV travels with parcel, 4850.768361, 25, 4889.768686, 34, Fly to UAV customer 34, Traveling 
-4, UAV, UAV taking off or landing with a parcel, 4889.768686, 34, 4896.159932, 34, Land at UAV customer 34, Traveling 
-4, UAV, UAV is stationary with a parcel, 4896.159932, 34, 4956.159932, 34, Serving UAV customer 34, Making Delivery 
-4, UAV, UAV taking off or landing with no parcels, 4956.159932, 34, 4959.855555, 34, Takeoff from UAV customer 34, Traveling 
-4, UAV, UAV travels empty, 4959.855555, 34, 5083.746536, 45, Fly to truck at customer 45, Traveling 
-4, UAV, UAV is stationary without a parcel, 5083.746536, 45, 5471.318969, 45, Idle above rendezvous location (customer 45), Idle 
-4, UAV, UAV taking off or landing with no parcels, 5471.318969, 45, 5477.710215, 45, Land at truck rendezvous location (customer 45), Traveling 
-4, UAV, UAV is stationary without a parcel, 5477.710215, 45, 5507.710215, 45, Recovered by truck at customer 45, UAV Recovery 
-4, UAV, UAV is stationary with a parcel, 6364.619040, 10, 6424.619040, 10, Prepare to launch from truck, UAV Launch 
-4, UAV, UAV taking off or landing with a parcel, 6424.619040, 10, 6428.314663, 10, Takeoff from truck at Customer 10, Traveling 
-4, UAV, UAV travels with parcel, 6428.314663, 10, 6568.555576, 46, Fly to UAV customer 46, Traveling 
-4, UAV, UAV taking off or landing with a parcel, 6568.555576, 46, 6574.946822, 46, Land at UAV customer 46, Traveling 
-4, UAV, UAV is stationary with a parcel, 6574.946822, 46, 6634.946822, 46, Serving UAV customer 46, Making Delivery 
-4, UAV, UAV taking off or landing with no parcels, 6634.946822, 46, 6638.642445, 46, Takeoff from UAV customer 46, Traveling 
-4, UAV, UAV travels empty, 6638.642445, 46, 6706.484547, 26, Fly to truck at customer 26, Traveling 
-4, UAV, UAV is stationary without a parcel, 6706.484547, 26, 6957.693161, 26, Idle above rendezvous location (customer 26), Idle 
-4, UAV, UAV taking off or landing with no parcels, 6957.693161, 26, 6964.084407, 26, Land at truck rendezvous location (customer 26), Traveling 
-4, UAV, UAV is stationary without a parcel, 6964.084407, 26, 6994.084407, 26, Recovered by truck at customer 26, UAV Recovery 
-4, UAV, UAV is stationary with a parcel, 7380.523946, 48, 7440.523946, 48, Prepare to launch from truck, UAV Launch 
-4, UAV, UAV taking off or landing with a parcel, 7440.523946, 48, 7444.219569, 48, Takeoff from truck at Customer 48, Traveling 
-4, UAV, UAV travels with parcel, 7444.219569, 48, 7602.968864, 49, Fly to UAV customer 49, Traveling 
-4, UAV, UAV taking off or landing with a parcel, 7602.968864, 49, 7609.360111, 49, Land at UAV customer 49, Traveling 
-4, UAV, UAV is stationary with a parcel, 7609.360111, 49, 7669.360111, 49, Serving UAV customer 49, Making Delivery 
-4, UAV, UAV taking off or landing with no parcels, 7669.360111, 49, 7673.055734, 49, Takeoff from UAV customer 49, Traveling 
-4, UAV, UAV travels empty, 7673.055734, 49, 7800.754701, 7, Fly to truck at customer 7, Traveling 
-4, UAV, UAV is stationary without a parcel, 7800.754701, 7, 7959.380968, 7, Idle above rendezvous location (customer 7), Idle 
-4, UAV, UAV taking off or landing with no parcels, 7959.380968, 7, 7965.772214, 7, Land at truck rendezvous location (customer 7), Traveling 
-4, UAV, UAV is stationary without a parcel, 7965.772214, 7, 7995.772214, 7, Recovered by truck at customer 7, UAV Recovery 
-5, UAV, UAV is stationary with a parcel, 2966.998734, 37, 3026.998734, 37, Prepare to launch from truck, UAV Launch 
-5, UAV, UAV taking off or landing with a parcel, 3026.998734, 37, 3030.694357, 37, Takeoff from truck at Customer 37, Traveling 
-5, UAV, UAV travels with parcel, 3030.694357, 37, 3090.821097, 12, Fly to UAV customer 12, Traveling 
-5, UAV, UAV taking off or landing with a parcel, 3090.821097, 12, 3097.212343, 12, Land at UAV customer 12, Traveling 
-5, UAV, UAV is stationary with a parcel, 3097.212343, 12, 3157.212343, 12, Serving UAV customer 12, Making Delivery 
-5, UAV, UAV taking off or landing with no parcels, 3157.212343, 12, 3160.907966, 12, Takeoff from UAV customer 12, Traveling 
-5, UAV, UAV travels empty, 3160.907966, 12, 3271.114688, 23, Fly to truck at customer 23, Traveling 
-5, UAV, UAV is stationary without a parcel, 3271.114688, 23, 3542.876834, 23, Idle above rendezvous location (customer 23), Idle 
-5, UAV, UAV taking off or landing with no parcels, 3542.876834, 23, 3549.268080, 23, Land at truck rendezvous location (customer 23), Traveling 
-5, UAV, UAV is stationary without a parcel, 3549.268080, 23, 3579.268080, 23, Recovered by truck at customer 23, UAV Recovery 
-5, UAV, UAV is stationary with a parcel, 3785.310867, 15, 3845.310867, 15, Prepare to launch from truck, UAV Launch 
-5, UAV, UAV taking off or landing with a parcel, 3845.310867, 15, 3849.006490, 15, Takeoff from truck at Customer 15, Traveling 
-5, UAV, UAV travels with parcel, 3849.006490, 15, 4029.021618, 38, Fly to UAV customer 38, Traveling 
-5, UAV, UAV taking off or landing with a parcel, 4029.021618, 38, 4035.412864, 38, Land at UAV customer 38, Traveling 
-5, UAV, UAV is stationary with a parcel, 4035.412864, 38, 4095.412864, 38, Serving UAV customer 38, Making Delivery 
-5, UAV, UAV taking off or landing with no parcels, 4095.412864, 38, 4099.108487, 38, Takeoff from UAV customer 38, Traveling 
-5, UAV, UAV travels empty, 4099.108487, 38, 4160.898980, 2, Fly to truck at customer 2, Traveling 
-5, UAV, UAV is stationary without a parcel, 4160.898980, 2, 4697.211835, 2, Idle above rendezvous location (customer 2), Idle 
-5, UAV, UAV taking off or landing with no parcels, 4697.211835, 2, 4703.603081, 2, Land at truck rendezvous location (customer 2), Traveling 
-5, UAV, UAV is stationary without a parcel, 4703.603081, 2, 4733.603081, 2, Recovered by truck at customer 2, UAV Recovery 
-5, UAV, UAV is stationary with a parcel, 4847.072738, 25, 4907.072738, 25, Prepare to launch from truck, UAV Launch 
-5, UAV, UAV taking off or landing with a parcel, 4907.072738, 25, 4910.768361, 25, Takeoff from truck at Customer 25, Traveling 
-5, UAV, UAV travels with parcel, 4910.768361, 25, 4954.728803, 39, Fly to UAV customer 39, Traveling 
-5, UAV, UAV taking off or landing with a parcel, 4954.728803, 39, 4961.120050, 39, Land at UAV customer 39, Traveling 
-5, UAV, UAV is stationary with a parcel, 4961.120050, 39, 5021.120050, 39, Serving UAV customer 39, Making Delivery 
-5, UAV, UAV taking off or landing with no parcels, 5021.120050, 39, 5024.815673, 39, Takeoff from UAV customer 39, Traveling 
-5, UAV, UAV travels empty, 5024.815673, 39, 5165.252948, 45, Fly to truck at customer 45, Traveling 
-5, UAV, UAV is stationary without a parcel, 5165.252948, 45, 5411.318969, 45, Idle above rendezvous location (customer 45), Idle 
-5, UAV, UAV taking off or landing with no parcels, 5411.318969, 45, 5417.710215, 45, Land at truck rendezvous location (customer 45), Traveling 
-5, UAV, UAV is stationary without a parcel, 5417.710215, 45, 5447.710215, 45, Recovered by truck at customer 45, UAV Recovery 
-5, UAV, UAV is stationary with a parcel, 6304.619040, 10, 6364.619040, 10, Prepare to launch from truck, UAV Launch 
-5, UAV, UAV taking off or landing with a parcel, 6364.619040, 10, 6368.314663, 10, Takeoff from truck at Customer 10, Traveling 
-5, UAV, UAV travels with parcel, 6368.314663, 10, 6551.107078, 9, Fly to UAV customer 9, Traveling 
-5, UAV, UAV taking off or landing with a parcel, 6551.107078, 9, 6557.498325, 9, Land at UAV customer 9, Traveling 
-5, UAV, UAV is stationary with a parcel, 6557.498325, 9, 6617.498325, 9, Serving UAV customer 9, Making Delivery 
-5, UAV, UAV taking off or landing with no parcels, 6617.498325, 9, 6621.193948, 9, Takeoff from UAV customer 9, Traveling 
-5, UAV, UAV travels empty, 6621.193948, 9, 6722.277244, 26, Fly to truck at customer 26, Traveling 
-5, UAV, UAV is stationary without a parcel, 6722.277244, 26, 6837.693161, 26, Idle above rendezvous location (customer 26), Idle 
-5, UAV, UAV taking off or landing with no parcels, 6837.693161, 26, 6844.084407, 26, Land at truck rendezvous location (customer 26), Traveling 
-5, UAV, UAV is stationary without a parcel, 6844.084407, 26, 6874.084407, 26, Recovered by truck at customer 26, UAV Recovery 
-5, UAV, UAV is stationary with a parcel, 7470.523946, 48, 7530.523946, 48, Prepare to launch from truck, UAV Launch 
-5, UAV, UAV taking off or landing with a parcel, 7530.523946, 48, 7534.219569, 48, Takeoff from truck at Customer 48, Traveling 
-5, UAV, UAV travels with parcel, 7534.219569, 48, 7610.204458, 5, Fly to UAV customer 5, Traveling 
-5, UAV, UAV taking off or landing with a parcel, 7610.204458, 5, 7616.595705, 5, Land at UAV customer 5, Traveling 
-5, UAV, UAV is stationary with a parcel, 7616.595705, 5, 7676.595705, 5, Serving UAV customer 5, Making Delivery 
-5, UAV, UAV taking off or landing with no parcels, 7676.595705, 5, 7680.291328, 5, Takeoff from UAV customer 5, Traveling 
-5, UAV, UAV travels empty, 7680.291328, 5, 7903.374287, 7, Fly to truck at customer 7, Traveling 
-5, UAV, UAV is stationary without a parcel, 7903.374287, 7, 7989.380968, 7, Idle above rendezvous location (customer 7), Idle 
-5, UAV, UAV taking off or landing with no parcels, 7989.380968, 7, 7995.772214, 7, Land at truck rendezvous location (customer 7), Traveling 
-5, UAV, UAV is stationary without a parcel, 7995.772214, 7, 8025.772214, 7, Recovered by truck at customer 7, UAV Recovery 
+vehicleID,vehicleType,activityType,startTime,startNode,endTime,endNode,Description,Status
+1,Truck,Truck is stationary with no UAVs on board,0.0,0,60.0,0,Launching UAV 3,UAV Launch
+1,Truck,Truck is stationary with no UAVs on board,60.0,0,120.0,0,Launching UAV 4,UAV Launch
+1,Truck,Truck is stationary with no UAVs on board,120.0,0,180.0,0,Launching UAV 5,UAV Launch
+1,Truck,Truck is stationary with no UAVs on board,180.0,0,240.0,0,Launching UAV 2,UAV Launch
+1,Truck,Truck travels with no UAVs on board,240.0,0,654.5035520560529,15,Travel from node 0 to node 15,Traveling
+1,Truck,Truck is stationary with no UAVs on board,654.503552051187,15,684.503552051187,15,Retrieving UAV 2,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,684.5035520511833,15,714.5035520511833,15,Retrieving UAV 5,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,714.5035520511803,15,744.5035520511803,15,Dropping off package to Customer 15,Making Delivery
+1,Truck,Truck is stationary with no UAVs on board,744.5035520511765,15,774.5035520511765,15,Retrieving UAV 3,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,774.5035520511733,15,804.5035520511733,15,Retrieving UAV 4,UAV Recovery
+1,Truck,Truck travels with UAV(s) on board,804.5035520511695,15,891.7195903701345,23,Travel from node 15 to node 23,Traveling
+1,Truck,Truck is stationary with UAV(s) on board,891.7195903701345,23,951.7195903701345,23,Launching UAV 3,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,951.719590370127,23,1011.719590370127,23,Launching UAV 4,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,1011.7195903701224,23,1071.7195903701224,23,Launching UAV 2,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,1071.7195903701186,23,1101.7195903701186,23,Dropping off package to Customer 23,Making Delivery
+1,Truck,Truck is stationary with UAV(s) on board,1101.7195903701147,23,1161.7195903701147,23,Launching UAV 5,UAV Launch
+1,Truck,Truck travels with no UAVs on board,1161.7195903701092,23,1762.4967314728453,37,Travel from node 23 to node 37,Traveling
+1,Truck,Truck is stationary with no UAVs on board,1762.4967314728453,37,1792.4967314728453,37,Retrieving UAV 3,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,1792.4967314728299,37,1822.4967314728299,37,Retrieving UAV 2,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,1822.4967314728226,37,1882.4967314728226,37,Launching UAV 2,UAV Launch
+1,Truck,Truck is stationary with no UAVs on board,1882.4967314728149,37,1942.4967314728149,37,Launching UAV 3,UAV Launch
+1,Truck,Truck is stationary with no UAVs on board,1942.4967314728156,37,1972.4967314728156,37,Dropping off package to Customer 37,Making Delivery
+1,Truck,Truck is stationary with no UAVs on board,1972.4967314727994,37,2002.4967314727994,37,Retrieving UAV 5,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,2002.496731472794,37,2032.496731472794,37,Retrieving UAV 4,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,2032.496731472787,37,2092.496731472787,37,Launching UAV 4,UAV Launch
+1,Truck,Truck travels with UAV(s) on board,2092.496731472787,37,2452.473012094715,32,Travel from node 37 to node 32,Traveling
+1,Truck,Truck is stationary with UAV(s) on board,2452.473012094706,32,2512.473012094706,32,Launching UAV 5,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,2512.4730120947065,32,2542.4730120947065,32,Dropping off package to Customer 32,Making Delivery
+1,Truck,Truck is stationary with UAV(s) on board,2542.4730120946924,32,2572.4730120946924,32,Retrieving UAV 2,UAV Recovery
+1,Truck,Truck is stationary with UAV(s) on board,2572.473012094685,32,2602.473012094685,32,Retrieving UAV 4,UAV Recovery
+1,Truck,Truck is stationary with UAV(s) on board,2602.4730120946742,32,2632.4730120946742,32,Retrieving UAV 3,UAV Recovery
+1,Truck,Truck is stationary with UAV(s) on board,2632.4730120946606,32,2692.4730120946606,32,Launching UAV 2,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,2692.473012094648,32,2752.473012094648,32,Launching UAV 4,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,2752.473012094639,32,2812.473012094639,32,Launching UAV 3,UAV Launch
+1,Truck,Truck travels with no UAVs on board,2812.473012094628,32,3288.9911607754843,17,Travel from node 32 to node 17,Traveling
+1,Truck,Truck is stationary with no UAVs on board,3288.9911607754843,17,3318.9911607754843,17,Retrieving UAV 2,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,3318.9911607754584,17,3348.9911607754584,17,Dropping off package to Customer 17,Making Delivery
+1,Truck,Truck is stationary with no UAVs on board,3348.9911607754457,17,3378.9911607754457,17,Retrieving UAV 5,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,3378.991160775431,17,3408.991160775431,17,Retrieving UAV 4,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,3408.9911607754184,17,3438.9911607754184,17,Retrieving UAV 3,UAV Recovery
+1,Truck,Truck travels with UAV(s) on board,3438.9911607754048,17,3544.0355147130144,3,Travel from node 17 to node 3,Traveling
+1,Truck,Truck is stationary with UAV(s) on board,3544.0355147130144,3,3574.0355147130144,3,Dropping off package to Customer 3,Making Delivery
+1,Truck,Truck travels with UAV(s) on board,3574.0355147130144,3,3747.536323432023,31,Travel from node 3 to node 31,Traveling
+1,Truck,Truck is stationary with UAV(s) on board,3747.536323432023,31,3777.536323432023,31,Dropping off package to Customer 31,Making Delivery
+1,Truck,Truck is stationary with UAV(s) on board,3777.536323432023,31,3837.536323432023,31,Launching UAV 4,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,3837.536323432023,31,3897.536323432023,31,Launching UAV 2,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,3897.536323436371,31,3957.536323436371,31,Launching UAV 3,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,3957.5363234319766,31,4017.5363234319766,31,Launching UAV 5,UAV Launch
+1,Truck,Truck travels with no UAVs on board,4017.5363234363713,31,4783.4922062462965,14,Travel from node 31 to node 14,Traveling
+1,Truck,Truck is stationary with no UAVs on board,4783.4922062462965,14,4813.4922062462965,14,Retrieving UAV 2,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,4813.4922062462965,14,4843.4922062462965,14,Dropping off package to Customer 14,Making Delivery
+1,Truck,Truck is stationary with no UAVs on board,4843.4922062462965,14,4873.4922062462965,14,Retrieving UAV 4,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,4873.4922062462965,14,4903.4922062462965,14,Retrieving UAV 5,UAV Recovery
+1,Truck,Truck travels with UAV(s) on board,4903.4922062462965,14,5153.187429077985,10,Travel from node 14 to node 10,Traveling
+1,Truck,Truck is stationary with UAV(s) on board,5153.187429077985,10,5213.187429077985,10,Launching UAV 2,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,5213.187429077985,10,5273.187429077985,10,Launching UAV 5,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,5273.187429077985,10,5333.187429077985,10,Launching UAV 4,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,5333.187429077985,10,5363.187429077985,10,Retrieving UAV 3,UAV Recovery
+1,Truck,Truck is stationary with UAV(s) on board,5363.18742907799,10,5393.18742907799,10,Dropping off package to Customer 10,Making Delivery
+1,Truck,Truck is stationary with UAV(s) on board,5393.18742907799,10,5453.18742907799,10,Launching UAV 3,UAV Launch
+1,Truck,Truck travels with no UAVs on board,5453.18742907799,10,5786.86471984148,26,Travel from node 10 to node 26,Traveling
+1,Truck,Truck is stationary with no UAVs on board,5786.864719841478,26,5816.864719841478,26,Retrieving UAV 3,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,5816.864719841477,26,5846.864719841477,26,Dropping off package to Customer 26,Making Delivery
+1,Truck,Truck is stationary with no UAVs on board,5846.864719841476,26,5876.864719841476,26,Retrieving UAV 4,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,5876.864719841476,26,5906.864719841476,26,Retrieving UAV 5,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,5906.8647198414765,26,5966.8647198414765,26,Launching UAV 3,UAV Launch
+1,Truck,Truck travels with UAV(s) on board,5966.864719841476,26,6099.236480626305,45,Travel from node 26 to node 45,Traveling
+1,Truck,Truck is stationary with UAV(s) on board,6099.236480626305,45,6159.236480626305,45,Launching UAV 4,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,6159.236480626305,45,6189.236480626305,45,Dropping off package to Customer 45,Making Delivery
+1,Truck,Truck is stationary with UAV(s) on board,6189.236480626305,45,6219.236480626305,45,Retrieving UAV 2,UAV Recovery
+1,Truck,Truck is stationary with UAV(s) on board,6219.236480626305,45,6279.236480626305,45,Launching UAV 2,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,6279.236480626305,45,6309.236480626305,45,Retrieving UAV 3,UAV Recovery
+1,Truck,Truck is stationary with UAV(s) on board,6309.236480626305,45,6369.236480626305,45,Launching UAV 3,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,6369.236480626305,45,6429.236480626305,45,Launching UAV 5,UAV Launch
+1,Truck,Truck travels with no UAVs on board,6429.236480626305,45,6744.49143225069,34,Travel from node 45 to node 34,Traveling
+1,Truck,Truck is stationary with no UAVs on board,6744.49143225069,34,6774.49143225069,34,Dropping off package to Customer 34,Making Delivery
+1,Truck,Truck is stationary with no UAVs on board,6774.49143225069,34,6804.49143225069,34,Retrieving UAV 3,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,6804.49143225069,34,6834.49143225069,34,Retrieving UAV 2,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,6834.49143225069,34,6894.49143225069,34,Launching UAV 3,UAV Launch
+1,Truck,Truck is stationary with no UAVs on board,6894.491432250688,34,6954.491432250688,34,Launching UAV 2,UAV Launch
+1,Truck,Truck is stationary with no UAVs on board,6954.491432250685,34,6984.491432250685,34,Retrieving UAV 5,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,6984.49143140325,34,7014.49143140325,34,Retrieving UAV 4,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,7014.491431398849,34,7074.491431398849,34,Launching UAV 4,UAV Launch
+1,Truck,Truck is stationary with no UAVs on board,7074.491431398849,34,7134.491431398849,34,Launching UAV 5,UAV Launch
+1,Truck,Truck travels with no UAVs on board,7134.491431398849,34,7613.754906259117,16,Travel from node 34 to node 16,Traveling
+1,Truck,Truck is stationary with no UAVs on board,7613.754906259117,16,7643.754906259117,16,Dropping off package to Customer 16,Making Delivery
+1,Truck,Truck is stationary with no UAVs on board,7643.754906259116,16,7673.754906259116,16,Retrieving UAV 2,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,7673.754906259116,16,7703.754906259116,16,Retrieving UAV 4,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,7703.754906259117,16,7733.754906259117,16,Retrieving UAV 3,UAV Recovery
+1,Truck,Truck travels with UAV(s) on board,7733.754906259117,16,7779.15509932825,22,Travel from node 16 to node 22,Traveling
+1,Truck,Truck is stationary with UAV(s) on board,7779.15509932825,22,7839.15509932825,22,Launching UAV 2,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,7839.15509932825,22,7899.15509932825,22,Launching UAV 3,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,7899.15509932825,22,7959.15509932825,22,Launching UAV 4,UAV Launch
+1,Truck,Truck is stationary with UAV(s) on board,7959.15509932825,22,7989.15509932825,22,Retrieving UAV 5,UAV Recovery
+1,Truck,Truck is stationary with UAV(s) on board,7989.15509932825,22,8019.15509932825,22,Dropping off package to Customer 22,Making Delivery
+1,Truck,Truck is stationary with UAV(s) on board,8019.15509932825,22,8079.15509932825,22,Launching UAV 5,UAV Launch
+1,Truck,Truck travels with no UAVs on board,8079.15509932825,22,8367.309365299185,51,Travel from node 22 to node 51,Traveling
+1,Truck,Truck is stationary with no UAVs on board,8367.309365299185,51,8397.309365299185,51,Retrieving UAV 3,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,8397.309365299185,51,8427.309365299185,51,Retrieving UAV 4,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,8427.309365299185,51,8457.309365299185,51,Retrieving UAV 2,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,8457.309365299185,51,8487.309365299185,51,Retrieving UAV 5,UAV Recovery
+1,Truck,Truck is stationary with no UAVs on board,8487.309365299185,51,-1.0,51,At the Depot.  Total Time = 2:21:27,Vehicle Tasks Complete
+2,UAV,UAV is stationary with a parcel,180.0,0,240.0,0,Prepare to launch from truck,UAV Launch
+2,UAV,UAV taking off or landing with a parcel,240.0,0,243.69562327436344,0,Takeoff from Depot,Traveling
+2,UAV,UAV travels with parcel,243.69562327436344,0,377.98644723643974,4,Fly to UAV customer 4,Traveling
+2,UAV,UAV taking off or landing with a parcel,377.9864472364397,4,384.37769378516657,4,Land at UAV customer 4,Traveling
+2,UAV,UAV is stationary with a parcel,384.37769378516657,4,444.37769378516657,4,Serving UAV customer 4,Making Delivery
+2,UAV,UAV taking off or landing with no parcels,444.37769378516657,4,448.07331705953,4,Takeoff from UAV customer 4,Traveling
+2,UAV,UAV travels empty,448.07331705953,4,557.2446431978277,15,Fly to truck at customer 15,Traveling
+2,UAV,UAV is stationary without a parcel,557.2446431978277,15,648.11230550246,15,Idle above rendezvous location (customer 15),Idle
+2,UAV,UAV taking off or landing with no parcels,648.11230550246,15,654.5035520511868,15,Land at truck rendezvous location (customer 15),Traveling
+2,UAV,UAV is stationary without a parcel,654.503552051187,15,684.503552051187,15,Recovered by truck at customer 15,UAV Recovery
+2,UAV,UAV is stationary with a parcel,1011.7195903701224,23,1071.7195903701224,23,Prepare to launch from truck,UAV Launch
+2,UAV,UAV taking off or landing with a parcel,1071.7195903701224,23,1075.415213644486,23,Takeoff from truck at Customer 23,Traveling
+2,UAV,UAV travels with parcel,1075.415213644486,23,1239.474980998637,13,Fly to UAV customer 13,Traveling
+2,UAV,UAV taking off or landing with a parcel,1239.4749809986367,13,1245.8662275473637,13,Land at UAV customer 13,Traveling
+2,UAV,UAV is stationary with a parcel,1245.8662275473637,13,1305.8662275473637,13,Serving UAV customer 13,Making Delivery
+2,UAV,UAV taking off or landing with no parcels,1305.8662275473637,13,1309.5618508217271,13,Takeoff from UAV customer 13,Traveling
+2,UAV,UAV travels empty,1309.5618508217271,13,1584.2382798468025,37,Fly to truck at customer 37,Traveling
+2,UAV,UAV is stationary without a parcel,1584.2382798468025,37,1786.1054849241032,37,Idle above rendezvous location (customer 37),Idle
+2,UAV,UAV taking off or landing with no parcels,1786.1054849241032,37,1792.49673147283,37,Land at truck rendezvous location (customer 37),Traveling
+2,UAV,UAV is stationary without a parcel,1792.4967314728299,37,1822.4967314728299,37,Recovered by truck at customer 37,UAV Recovery
+2,UAV,UAV is stationary with a parcel,1822.4967314728226,37,1882.4967314728226,37,Prepare to launch from truck,UAV Launch
+2,UAV,UAV taking off or landing with a parcel,1882.4967314728226,37,1886.192354747186,37,Takeoff from truck at Customer 37,Traveling
+2,UAV,UAV travels with parcel,1886.192354747186,37,2031.4878592593682,8,Fly to UAV customer 8,Traveling
+2,UAV,UAV taking off or landing with a parcel,2031.4878592593682,8,2037.8791058080951,8,Land at UAV customer 8,Traveling
+2,UAV,UAV is stationary with a parcel,2037.8791058080951,8,2097.879105808095,8,Serving UAV customer 8,Making Delivery
+2,UAV,UAV taking off or landing with no parcels,2097.879105808095,8,2101.5747290824584,8,Takeoff from UAV customer 8,Traveling
+2,UAV,UAV travels empty,2101.5747290824584,8,2237.564926799307,32,Fly to truck at customer 32,Traveling
+2,UAV,UAV is stationary without a parcel,2237.564926799307,32,2536.0817655459655,32,Idle above rendezvous location (customer 32),Idle
+2,UAV,UAV taking off or landing with no parcels,2536.0817655459655,32,2542.4730120946924,32,Land at truck rendezvous location (customer 32),Traveling
+2,UAV,UAV is stationary without a parcel,2542.4730120946924,32,2572.4730120946924,32,Recovered by truck at customer 32,UAV Recovery
+2,UAV,UAV is stationary with a parcel,2632.4730120946606,32,2692.4730120946606,32,Prepare to launch from truck,UAV Launch
+2,UAV,UAV taking off or landing with a parcel,2692.4730120946606,32,2696.168635369024,32,Takeoff from truck at Customer 32,Traveling
+2,UAV,UAV travels with parcel,2696.168635369024,32,2846.73346852816,12,Fly to UAV customer 12,Traveling
+2,UAV,UAV taking off or landing with a parcel,2846.73346852816,12,2853.124715076887,12,Land at UAV customer 12,Traveling
+2,UAV,UAV is stationary with a parcel,2853.124715076887,12,2913.124715076887,12,Serving UAV customer 12,Making Delivery
+2,UAV,UAV taking off or landing with no parcels,2913.124715076887,12,2916.82033835125,12,Takeoff from UAV customer 12,Traveling
+2,UAV,UAV travels empty,2916.82033835125,12,3157.345444718912,17,Fly to truck at customer 17,Traveling
+2,UAV,UAV is stationary without a parcel,3157.345444718912,17,3282.599914226757,17,Idle above rendezvous location (customer 17),Idle
+2,UAV,UAV taking off or landing with no parcels,3282.599914226757,17,3288.991160775484,17,Land at truck rendezvous location (customer 17),Traveling
+2,UAV,UAV is stationary without a parcel,3288.9911607754843,17,3318.9911607754843,17,Recovered by truck at customer 17,UAV Recovery
+2,UAV,UAV is stationary with a parcel,3837.536323432023,31,3897.536323432023,31,Prepare to launch from truck,UAV Launch
+2,UAV,UAV taking off or landing with a parcel,3897.536323432023,31,3901.231946706386,31,Takeoff from truck at Customer 31,Traveling
+2,UAV,UAV travels with parcel,3901.231946706386,31,4018.870893717081,1,Fly to UAV customer 1,Traveling
+2,UAV,UAV taking off or landing with a parcel,4018.870893717081,1,4025.262140265808,1,Land at UAV customer 1,Traveling
+2,UAV,UAV is stationary with a parcel,4025.262140265808,1,4085.262140265808,1,Serving UAV customer 1,Making Delivery
+2,UAV,UAV taking off or landing with no parcels,4085.262140265808,1,4088.957763540171,1,Takeoff from UAV customer 1,Traveling
+2,UAV,UAV travels empty,4088.957763540171,1,4219.239989370267,14,Fly to truck at customer 14,Traveling
+2,UAV,UAV is stationary without a parcel,4219.239989370267,14,4777.100959697569,14,Idle above rendezvous location (customer 14),Idle
+2,UAV,UAV taking off or landing with no parcels,4777.100959697569,14,4783.492206246296,14,Land at truck rendezvous location (customer 14),Traveling
+2,UAV,UAV is stationary without a parcel,4783.4922062462965,14,4813.4922062462965,14,Recovered by truck at customer 14,UAV Recovery
+2,UAV,UAV is stationary with a parcel,5153.187429077985,10,5213.187429077985,10,Prepare to launch from truck,UAV Launch
+2,UAV,UAV taking off or landing with a parcel,5213.187429077985,10,5216.883052352348,10,Takeoff from truck at Customer 10,Traveling
+2,UAV,UAV travels with parcel,5216.883052352348,10,5600.785546261648,41,Fly to UAV customer 41,Traveling
+2,UAV,UAV taking off or landing with a parcel,5600.785546261648,41,5607.1767928103745,41,Land at UAV customer 41,Traveling
+2,UAV,UAV is stationary with a parcel,5607.1767928103745,41,5667.1767928103745,41,Serving UAV customer 41,Making Delivery
+2,UAV,UAV taking off or landing with no parcels,5667.1767928103745,41,5670.872416084738,41,Takeoff from UAV customer 41,Traveling
+2,UAV,UAV travels empty,5670.872416084738,41,5858.329740267713,45,Fly to truck at customer 45,Traveling
+2,UAV,UAV is stationary without a parcel,5858.329740267713,45,6182.845234077578,45,Idle above rendezvous location (customer 45),Idle
+2,UAV,UAV taking off or landing with no parcels,6182.845234077578,45,6189.236480626305,45,Land at truck rendezvous location (customer 45),Traveling
+2,UAV,UAV is stationary without a parcel,6189.236480626305,45,6219.236480626305,45,Recovered by truck at customer 45,UAV Recovery
+2,UAV,UAV is stationary with a parcel,6219.236480626305,45,6279.236480626305,45,Prepare to launch from truck,UAV Launch
+2,UAV,UAV taking off or landing with a parcel,6279.236480626305,45,6282.932103900668,45,Takeoff from truck at Customer 45,Traveling
+2,UAV,UAV travels with parcel,6282.932103900668,45,6399.544883687181,29,Fly to UAV customer 29,Traveling
+2,UAV,UAV taking off or landing with a parcel,6399.544883687181,29,6405.9361302359075,29,Land at UAV customer 29,Traveling
+2,UAV,UAV is stationary with a parcel,6405.9361302359075,29,6465.9361302359075,29,Serving UAV customer 29,Making Delivery
+2,UAV,UAV taking off or landing with no parcels,6465.9361302359075,29,6469.631753510271,29,Takeoff from UAV customer 29,Traveling
+2,UAV,UAV travels empty,6469.631753510271,29,6576.968628831929,34,Fly to truck at customer 34,Traveling
+2,UAV,UAV is stationary without a parcel,6576.968628831929,34,6798.100185701963,34,Idle above rendezvous location (customer 34),Idle
+2,UAV,UAV taking off or landing with no parcels,6798.100185701963,34,6804.491432250689,34,Land at truck rendezvous location (customer 34),Traveling
+2,UAV,UAV is stationary without a parcel,6804.49143225069,34,6834.49143225069,34,Recovered by truck at customer 34,UAV Recovery
+2,UAV,UAV is stationary with a parcel,6894.491432250688,34,6954.491432250688,34,Prepare to launch from truck,UAV Launch
+2,UAV,UAV taking off or landing with a parcel,6954.491432250688,34,6958.187055525052,34,Takeoff from truck at Customer 34,Traveling
+2,UAV,UAV travels with parcel,6958.187055525052,34,7192.0353201692205,9,Fly to UAV customer 9,Traveling
+2,UAV,UAV taking off or landing with a parcel,7192.035320169221,9,7198.426566717948,9,Land at UAV customer 9,Traveling
+2,UAV,UAV is stationary with a parcel,7198.426566717948,9,7258.426566717948,9,Serving UAV customer 9,Making Delivery
+2,UAV,UAV taking off or landing with no parcels,7258.426566717948,9,7262.122189992311,9,Takeoff from UAV customer 9,Traveling
+2,UAV,UAV travels empty,7262.122189992311,9,7429.544037231229,16,Fly to truck at customer 16,Traveling
+2,UAV,UAV is stationary without a parcel,7429.544037231229,16,7637.363659710389,16,Idle above rendezvous location (customer 16),Idle
+2,UAV,UAV taking off or landing with no parcels,7637.363659710389,16,7643.754906259115,16,Land at truck rendezvous location (customer 16),Traveling
+2,UAV,UAV is stationary without a parcel,7643.754906259116,16,7673.754906259116,16,Recovered by truck at customer 16,UAV Recovery
+2,UAV,UAV is stationary with a parcel,7779.15509932825,22,7839.15509932825,22,Prepare to launch from truck,UAV Launch
+2,UAV,UAV taking off or landing with a parcel,7839.15509932825,22,7842.850722602613,22,Takeoff from truck at Customer 22,Traveling
+2,UAV,UAV travels with parcel,7842.850722602613,22,7963.419049838032,50,Fly to UAV customer 50,Traveling
+2,UAV,UAV taking off or landing with a parcel,7963.419049838032,50,7969.810296386759,50,Land at UAV customer 50,Traveling
+2,UAV,UAV is stationary with a parcel,7969.810296386759,50,8029.810296386759,50,Serving UAV customer 50,Making Delivery
+2,UAV,UAV taking off or landing with no parcels,8029.810296386759,50,8033.505919661122,50,Takeoff from UAV customer 50,Traveling
+2,UAV,UAV travels empty,8033.505919661122,50,8239.20282651814,51,Fly to depot,Traveling
+2,UAV,UAV is stationary without a parcel,8239.20282651814,51,8420.918118750458,51,Idle above depot location,Idle
+2,UAV,UAV taking off or landing with no parcels,8420.918118750458,51,8427.309365299185,51,Land at depot,Traveling
+2,UAV,UAV is stationary without a parcel,8427.309365299185,51,8457.309365299185,51,Recovered at depot,UAV Recovery
+3,UAV,UAV is stationary with a parcel,0.0,0,60.0,0,Prepare to launch from truck,UAV Launch
+3,UAV,UAV taking off or landing with a parcel,60.0,0,63.695623274363435,0,Takeoff from Depot,Traveling
+3,UAV,UAV travels with parcel,63.695623274363435,0,276.22225031770506,39,Fly to UAV customer 39,Traveling
+3,UAV,UAV taking off or landing with a parcel,276.222250317705,39,282.6134968664319,39,Land at UAV customer 39,Traveling
+3,UAV,UAV is stationary with a parcel,282.6134968664319,39,342.6134968664319,39,Serving UAV customer 39,Making Delivery
+3,UAV,UAV taking off or landing with no parcels,342.6134968664319,39,346.3091201407953,39,Takeoff from UAV customer 39,Traveling
+3,UAV,UAV travels empty,346.3091201407953,39,535.7373541289429,15,Fly to truck at customer 15,Traveling
+3,UAV,UAV is stationary without a parcel,535.7373541289429,15,738.1123055024497,15,Idle above rendezvous location (customer 15),Idle
+3,UAV,UAV taking off or landing with no parcels,738.1123055024497,15,744.5035520511765,15,Land at truck rendezvous location (customer 15),Traveling
+3,UAV,UAV is stationary without a parcel,744.5035520511765,15,774.5035520511765,15,Recovered by truck at customer 15,UAV Recovery
+3,UAV,UAV is stationary with a parcel,891.7195903701345,23,951.7195903701345,23,Prepare to launch from truck,UAV Launch
+3,UAV,UAV taking off or landing with a parcel,951.7195903701345,23,955.415213644498,23,Takeoff from truck at Customer 23,Traveling
+3,UAV,UAV travels with parcel,955.415213644498,23,1060.9412127073517,18,Fly to UAV customer 18,Traveling
+3,UAV,UAV taking off or landing with a parcel,1060.9412127073517,18,1067.3324592560787,18,Land at UAV customer 18,Traveling
+3,UAV,UAV is stationary with a parcel,1067.3324592560787,18,1127.3324592560787,18,Serving UAV customer 18,Making Delivery
+3,UAV,UAV taking off or landing with no parcels,1127.3324592560787,18,1131.0280825304421,18,Takeoff from UAV customer 18,Traveling
+3,UAV,UAV travels empty,1131.0280825304421,18,1254.9908245117883,37,Fly to truck at customer 37,Traveling
+3,UAV,UAV is stationary without a parcel,1254.9908245117883,37,1756.1054849241186,37,Idle above rendezvous location (customer 37),Idle
+3,UAV,UAV taking off or landing with no parcels,1756.1054849241186,37,1762.4967314728456,37,Land at truck rendezvous location (customer 37),Traveling
+3,UAV,UAV is stationary without a parcel,1762.4967314728453,37,1792.4967314728453,37,Recovered by truck at customer 37,UAV Recovery
+3,UAV,UAV is stationary with a parcel,1882.4967314728149,37,1942.4967314728149,37,Prepare to launch from truck,UAV Launch
+3,UAV,UAV taking off or landing with a parcel,1942.4967314728149,37,1946.1923547471783,37,Takeoff from truck at Customer 37,Traveling
+3,UAV,UAV travels with parcel,1946.1923547471783,37,2049.258824385979,11,Fly to UAV customer 11,Traveling
+3,UAV,UAV taking off or landing with a parcel,2049.258824385979,11,2055.650070934706,11,Land at UAV customer 11,Traveling
+3,UAV,UAV is stationary with a parcel,2055.650070934706,11,2115.650070934706,11,Serving UAV customer 11,Making Delivery
+3,UAV,UAV taking off or landing with no parcels,2115.650070934706,11,2119.3456942090693,11,Takeoff from UAV customer 11,Traveling
+3,UAV,UAV travels empty,2119.3456942090693,11,2164.574225404862,32,Fly to truck at customer 32,Traveling
+3,UAV,UAV is stationary without a parcel,2164.574225404862,32,2596.0817655459473,32,Idle above rendezvous location (customer 32),Idle
+3,UAV,UAV taking off or landing with no parcels,2596.0817655459473,32,2602.4730120946742,32,Land at truck rendezvous location (customer 32),Traveling
+3,UAV,UAV is stationary without a parcel,2602.4730120946742,32,2632.4730120946742,32,Recovered by truck at customer 32,UAV Recovery
+3,UAV,UAV is stationary with a parcel,2752.473012094639,32,2812.473012094639,32,Prepare to launch from truck,UAV Launch
+3,UAV,UAV taking off or landing with a parcel,2812.473012094639,32,2816.1686353690025,32,Takeoff from truck at Customer 32,Traveling
+3,UAV,UAV travels with parcel,2816.1686353690025,32,3057.3564119069993,33,Fly to UAV customer 33,Traveling
+3,UAV,UAV taking off or landing with a parcel,3057.3564119069997,33,3063.7476584557267,33,Land at UAV customer 33,Traveling
+3,UAV,UAV is stationary with a parcel,3063.7476584557267,33,3123.7476584557267,33,Serving UAV customer 33,Making Delivery
+3,UAV,UAV taking off or landing with no parcels,3123.7476584557267,33,3127.44328173009,33,Takeoff from UAV customer 33,Traveling
+3,UAV,UAV travels empty,3127.44328173009,33,3232.6234233519626,17,Fly to truck at customer 17,Traveling
+3,UAV,UAV is stationary without a parcel,3232.6234233519626,17,3402.599914226691,17,Idle above rendezvous location (customer 17),Idle
+3,UAV,UAV taking off or landing with no parcels,3402.599914226691,17,3408.991160775418,17,Land at truck rendezvous location (customer 17),Traveling
+3,UAV,UAV is stationary without a parcel,3408.9911607754184,17,3438.9911607754184,17,Recovered by truck at customer 17,UAV Recovery
+3,UAV,UAV is stationary with a parcel,3897.536323436371,31,3957.536323436371,31,Prepare to launch from truck,UAV Launch
+3,UAV,UAV taking off or landing with a parcel,3957.536323436371,31,3961.231946710734,31,Takeoff from truck at Customer 31,Traveling
+3,UAV,UAV travels with parcel,3961.231946710734,31,4285.298601899605,2,Fly to UAV customer 2,Traveling
+3,UAV,UAV taking off or landing with a parcel,4285.298601899606,2,4291.689848448333,2,Land at UAV customer 2,Traveling
+3,UAV,UAV is stationary with a parcel,4291.689848448333,2,4351.689848448333,2,Serving UAV customer 2,Making Delivery
+3,UAV,UAV taking off or landing with no parcels,4351.689848448333,2,4355.385471722696,2,Takeoff from UAV customer 2,Traveling
+3,UAV,UAV travels empty,4355.385471722696,2,4663.376955381164,10,Fly to truck at customer 10,Traveling
+3,UAV,UAV is stationary without a parcel,4663.376955381164,10,5326.796182529259,10,Idle above rendezvous location (customer 10),Idle
+3,UAV,UAV taking off or landing with no parcels,5326.796182529259,10,5333.187429077985,10,Land at truck rendezvous location (customer 10),Traveling
+3,UAV,UAV is stationary without a parcel,5333.187429077985,10,5363.187429077985,10,Recovered by truck at customer 10,UAV Recovery
+3,UAV,UAV is stationary with a parcel,5393.18742907799,10,5453.18742907799,10,Prepare to launch from truck,UAV Launch
+3,UAV,UAV taking off or landing with a parcel,5453.18742907799,10,5456.883052352353,10,Takeoff from truck at Customer 10,Traveling
+3,UAV,UAV travels with parcel,5456.883052352353,10,5597.123964434105,46,Fly to UAV customer 46,Traveling
+3,UAV,UAV taking off or landing with a parcel,5597.123964434106,46,5603.515210982832,46,Land at UAV customer 46,Traveling
+3,UAV,UAV is stationary with a parcel,5603.515210982832,46,5663.515210982832,46,Serving UAV customer 46,Making Delivery
+3,UAV,UAV taking off or landing with no parcels,5663.515210982832,46,5667.2108342571955,46,Takeoff from UAV customer 46,Traveling
+3,UAV,UAV travels empty,5667.2108342571955,46,5735.052936374653,26,Fly to truck at customer 26,Traveling
+3,UAV,UAV is stationary without a parcel,5735.052936374653,26,5780.473473292752,26,Idle above rendezvous location (customer 26),Idle
+3,UAV,UAV taking off or landing with no parcels,5780.473473292752,26,5786.864719841478,26,Land at truck rendezvous location (customer 26),Traveling
+3,UAV,UAV is stationary without a parcel,5786.864719841478,26,5816.864719841478,26,Recovered by truck at customer 26,UAV Recovery
+3,UAV,UAV is stationary with a parcel,5906.8647198414765,26,5966.8647198414765,26,Prepare to launch from truck,UAV Launch
+3,UAV,UAV taking off or landing with a parcel,5966.8647198414765,26,5970.56034311584,26,Takeoff from truck at Customer 26,Traveling
+3,UAV,UAV travels with parcel,5970.56034311584,26,6012.907269644439,5,Fly to UAV customer 5,Traveling
+3,UAV,UAV taking off or landing with a parcel,6012.90726964444,5,6019.2985161931665,5,Land at UAV customer 5,Traveling
+3,UAV,UAV is stationary with a parcel,6019.2985161931665,5,6079.2985161931665,5,Serving UAV customer 5,Making Delivery
+3,UAV,UAV taking off or landing with no parcels,6079.2985161931665,5,6082.99413946753,5,Takeoff from UAV customer 5,Traveling
+3,UAV,UAV travels empty,6082.99413946753,5,6116.416168205506,45,Fly to truck at customer 45,Traveling
+3,UAV,UAV is stationary without a parcel,6116.416168205506,45,6272.845234077578,45,Idle above rendezvous location (customer 45),Idle
+3,UAV,UAV taking off or landing with no parcels,6272.845234077578,45,6279.236480626305,45,Land at truck rendezvous location (customer 45),Traveling
+3,UAV,UAV is stationary without a parcel,6279.236480626305,45,6309.236480626305,45,Recovered by truck at customer 45,UAV Recovery
+3,UAV,UAV is stationary with a parcel,6309.236480626305,45,6369.236480626305,45,Prepare to launch from truck,UAV Launch
+3,UAV,UAV taking off or landing with a parcel,6369.236480626305,45,6372.932103900668,45,Takeoff from truck at Customer 45,Traveling
+3,UAV,UAV travels with parcel,6372.932103900668,45,6473.647211799264,19,Fly to UAV customer 19,Traveling
+3,UAV,UAV taking off or landing with a parcel,6473.647211799264,19,6480.038458347991,19,Land at UAV customer 19,Traveling
+3,UAV,UAV is stationary with a parcel,6480.038458347991,19,6540.038458347991,19,Serving UAV customer 19,Making Delivery
+3,UAV,UAV taking off or landing with no parcels,6540.038458347991,19,6543.734081622354,19,Takeoff from UAV customer 19,Traveling
+3,UAV,UAV travels empty,6543.734081622354,19,6673.874853329222,34,Fly to truck at customer 34,Traveling
+3,UAV,UAV is stationary without a parcel,6673.874853329222,34,6768.100185701963,34,Idle above rendezvous location (customer 34),Idle
+3,UAV,UAV taking off or landing with no parcels,6768.100185701963,34,6774.491432250689,34,Land at truck rendezvous location (customer 34),Traveling
+3,UAV,UAV is stationary without a parcel,6774.49143225069,34,6804.49143225069,34,Recovered by truck at customer 34,UAV Recovery
+3,UAV,UAV is stationary with a parcel,6834.49143225069,34,6894.49143225069,34,Prepare to launch from truck,UAV Launch
+3,UAV,UAV taking off or landing with a parcel,6894.49143225069,34,6898.187055525053,34,Takeoff from truck at Customer 34,Traveling
+3,UAV,UAV travels with parcel,6898.187055525053,34,7037.528311590729,6,Fly to UAV customer 6,Traveling
+3,UAV,UAV taking off or landing with a parcel,7037.528311590729,6,7043.919558139455,6,Land at UAV customer 6,Traveling
+3,UAV,UAV is stationary with a parcel,7043.919558139455,6,7103.919558139455,6,Serving UAV customer 6,Making Delivery
+3,UAV,UAV taking off or landing with no parcels,7103.919558139455,6,7107.615181413818,6,Takeoff from UAV customer 6,Traveling
+3,UAV,UAV travels empty,7107.615181413818,6,7341.3365840231145,16,Fly to truck at customer 16,Traveling
+3,UAV,UAV is stationary without a parcel,7341.3365840231145,16,7697.36365971039,16,Idle above rendezvous location (customer 16),Idle
+3,UAV,UAV taking off or landing with no parcels,7697.36365971039,16,7703.754906259116,16,Land at truck rendezvous location (customer 16),Traveling
+3,UAV,UAV is stationary without a parcel,7703.754906259117,16,7733.754906259117,16,Recovered by truck at customer 16,UAV Recovery
+3,UAV,UAV is stationary with a parcel,7839.15509932825,22,7899.15509932825,22,Prepare to launch from truck,UAV Launch
+3,UAV,UAV taking off or landing with a parcel,7899.15509932825,22,7902.850722602613,22,Takeoff from truck at Customer 22,Traveling
+3,UAV,UAV travels with parcel,7902.850722602613,22,7966.732280704544,49,Fly to UAV customer 49,Traveling
+3,UAV,UAV taking off or landing with a parcel,7966.732280704545,49,7973.123527253271,49,Land at UAV customer 49,Traveling
+3,UAV,UAV is stationary with a parcel,7973.123527253271,49,8033.123527253271,49,Serving UAV customer 49,Making Delivery
+3,UAV,UAV taking off or landing with no parcels,8033.123527253271,49,8036.8191505276345,49,Takeoff from UAV customer 49,Traveling
+3,UAV,UAV travels empty,8036.8191505276345,49,8197.706455136062,51,Fly to depot,Traveling
+3,UAV,UAV is stationary without a parcel,8197.706455136062,51,8360.918118750458,51,Idle above depot location,Idle
+3,UAV,UAV taking off or landing with no parcels,8360.918118750458,51,8367.309365299185,51,Land at depot,Traveling
+3,UAV,UAV is stationary without a parcel,8367.309365299185,51,8397.309365299185,51,Recovered at depot,UAV Recovery
+4,UAV,UAV is stationary with a parcel,60.0,0,120.0,0,Prepare to launch from truck,UAV Launch
+4,UAV,UAV taking off or landing with a parcel,120.0,0,123.69562327436343,0,Takeoff from Depot,Traveling
+4,UAV,UAV travels with parcel,123.69562327436343,0,402.2494427428655,40,Fly to UAV customer 40,Traveling
+4,UAV,UAV taking off or landing with a parcel,402.2494427428655,40,408.64068929159237,40,Land at UAV customer 40,Traveling
+4,UAV,UAV is stationary with a parcel,408.64068929159237,40,468.64068929159237,40,Serving UAV customer 40,Making Delivery
+4,UAV,UAV taking off or landing with no parcels,468.64068929159237,40,472.3363125659558,40,Takeoff from UAV customer 40,Traveling
+4,UAV,UAV travels empty,472.3363125659558,40,626.935732794473,15,Fly to truck at customer 15,Traveling
+4,UAV,UAV is stationary without a parcel,626.935732794473,15,768.1123055024464,15,Idle above rendezvous location (customer 15),Idle
+4,UAV,UAV taking off or landing with no parcels,768.1123055024464,15,774.5035520511732,15,Land at truck rendezvous location (customer 15),Traveling
+4,UAV,UAV is stationary without a parcel,774.5035520511733,15,804.5035520511733,15,Recovered by truck at customer 15,UAV Recovery
+4,UAV,UAV is stationary with a parcel,951.719590370127,23,1011.719590370127,23,Prepare to launch from truck,UAV Launch
+4,UAV,UAV taking off or landing with a parcel,1011.719590370127,23,1015.4152136444904,23,Takeoff from truck at Customer 23,Traveling
+4,UAV,UAV travels with parcel,1015.4152136444904,23,1270.6620428115605,20,Fly to UAV customer 20,Traveling
+4,UAV,UAV taking off or landing with a parcel,1270.6620428115605,20,1277.0532893602874,20,Land at UAV customer 20,Traveling
+4,UAV,UAV is stationary with a parcel,1277.0532893602874,20,1337.0532893602874,20,Serving UAV customer 20,Making Delivery
+4,UAV,UAV taking off or landing with no parcels,1337.0532893602874,20,1340.7489126346509,20,Takeoff from UAV customer 20,Traveling
+4,UAV,UAV travels empty,1340.7489126346509,20,1545.0565935610286,37,Fly to truck at customer 37,Traveling
+4,UAV,UAV is stationary without a parcel,1545.0565935610286,37,1996.1054849240672,37,Idle above rendezvous location (customer 37),Idle
+4,UAV,UAV taking off or landing with no parcels,1996.1054849240672,37,2002.4967314727942,37,Land at truck rendezvous location (customer 37),Traveling
+4,UAV,UAV is stationary without a parcel,2002.496731472794,37,2032.496731472794,37,Recovered by truck at customer 37,UAV Recovery
+4,UAV,UAV is stationary with a parcel,2032.496731472787,37,2092.496731472787,37,Prepare to launch from truck,UAV Launch
+4,UAV,UAV taking off or landing with a parcel,2092.496731472787,37,2096.19235474715,37,Takeoff from truck at Customer 37,Traveling
+4,UAV,UAV travels with parcel,2096.19235474715,37,2247.246652772702,35,Fly to UAV customer 35,Traveling
+4,UAV,UAV taking off or landing with a parcel,2247.246652772702,35,2253.637899321429,35,Land at UAV customer 35,Traveling
+4,UAV,UAV is stationary with a parcel,2253.637899321429,35,2313.637899321429,35,Serving UAV customer 35,Making Delivery
+4,UAV,UAV taking off or landing with no parcels,2313.637899321429,35,2317.333522595792,35,Takeoff from UAV customer 35,Traveling
+4,UAV,UAV travels empty,2317.333522595792,35,2428.0136840184023,32,Fly to truck at customer 32,Traveling
+4,UAV,UAV is stationary without a parcel,2428.0136840184023,32,2566.0817655459578,32,Idle above rendezvous location (customer 32),Idle
+4,UAV,UAV taking off or landing with no parcels,2566.0817655459578,32,2572.4730120946847,32,Land at truck rendezvous location (customer 32),Traveling
+4,UAV,UAV is stationary without a parcel,2572.473012094685,32,2602.473012094685,32,Recovered by truck at customer 32,UAV Recovery
+4,UAV,UAV is stationary with a parcel,2692.473012094648,32,2752.473012094648,32,Prepare to launch from truck,UAV Launch
+4,UAV,UAV taking off or landing with a parcel,2752.473012094648,32,2756.168635369011,32,Takeoff from truck at Customer 32,Traveling
+4,UAV,UAV travels with parcel,2756.168635369011,32,2980.686497900064,42,Fly to UAV customer 42,Traveling
+4,UAV,UAV taking off or landing with a parcel,2980.686497900064,42,2987.077744448791,42,Land at UAV customer 42,Traveling
+4,UAV,UAV is stationary with a parcel,2987.077744448791,42,3047.077744448791,42,Serving UAV customer 42,Making Delivery
+4,UAV,UAV taking off or landing with no parcels,3047.077744448791,42,3050.773367723154,42,Takeoff from UAV customer 42,Traveling
+4,UAV,UAV travels empty,3050.773367723154,42,3144.5329427430597,17,Fly to truck at customer 17,Traveling
+4,UAV,UAV is stationary without a parcel,3144.5329427430597,17,3372.5999142267037,17,Idle above rendezvous location (customer 17),Idle
+4,UAV,UAV taking off or landing with no parcels,3372.5999142267037,17,3378.9911607754307,17,Land at truck rendezvous location (customer 17),Traveling
+4,UAV,UAV is stationary without a parcel,3378.991160775431,17,3408.991160775431,17,Recovered by truck at customer 17,UAV Recovery
+4,UAV,UAV is stationary with a parcel,3777.536323432023,31,3837.536323432023,31,Prepare to launch from truck,UAV Launch
+4,UAV,UAV taking off or landing with a parcel,3837.536323432023,31,3841.231946706386,31,Takeoff from truck at Customer 31,Traveling
+4,UAV,UAV travels with parcel,3841.231946706386,31,4020.634253459167,24,Fly to UAV customer 24,Traveling
+4,UAV,UAV taking off or landing with a parcel,4020.6342534591677,24,4027.0255000078946,24,Land at UAV customer 24,Traveling
+4,UAV,UAV is stationary with a parcel,4027.0255000078946,24,4087.0255000078946,24,Serving UAV customer 24,Making Delivery
+4,UAV,UAV taking off or landing with no parcels,4087.0255000078946,24,4090.721123282258,24,Takeoff from UAV customer 24,Traveling
+4,UAV,UAV travels empty,4090.721123282258,24,4513.301869185459,14,Fly to truck at customer 14,Traveling
+4,UAV,UAV is stationary without a parcel,4513.301869185459,14,4837.100959697569,14,Idle above rendezvous location (customer 14),Idle
+4,UAV,UAV taking off or landing with no parcels,4837.100959697569,14,4843.492206246296,14,Land at truck rendezvous location (customer 14),Traveling
+4,UAV,UAV is stationary without a parcel,4843.4922062462965,14,4873.4922062462965,14,Recovered by truck at customer 14,UAV Recovery
+4,UAV,UAV is stationary with a parcel,5273.187429077985,10,5333.187429077985,10,Prepare to launch from truck,UAV Launch
+4,UAV,UAV taking off or landing with a parcel,5333.187429077985,10,5336.883052352348,10,Takeoff from truck at Customer 10,Traveling
+4,UAV,UAV travels with parcel,5336.883052352348,10,5453.743344887975,47,Fly to UAV customer 47,Traveling
+4,UAV,UAV taking off or landing with a parcel,5453.743344887976,47,5460.134591436702,47,Land at UAV customer 47,Traveling
+4,UAV,UAV is stationary with a parcel,5460.134591436702,47,5520.134591436702,47,Serving UAV customer 47,Making Delivery
+4,UAV,UAV taking off or landing with no parcels,5520.134591436702,47,5523.830214711065,47,Takeoff from UAV customer 47,Traveling
+4,UAV,UAV travels empty,5523.830214711065,47,5627.642115393688,26,Fly to truck at customer 26,Traveling
+4,UAV,UAV is stationary without a parcel,5627.642115393688,26,5840.473473292749,26,Idle above rendezvous location (customer 26),Idle
+4,UAV,UAV taking off or landing with no parcels,5840.473473292749,26,5846.864719841476,26,Land at truck rendezvous location (customer 26),Traveling
+4,UAV,UAV is stationary without a parcel,5846.864719841476,26,5876.864719841476,26,Recovered by truck at customer 26,UAV Recovery
+4,UAV,UAV is stationary with a parcel,6099.236480626305,45,6159.236480626305,45,Prepare to launch from truck,UAV Launch
+4,UAV,UAV taking off or landing with a parcel,6159.236480626305,45,6162.932103900668,45,Takeoff from truck at Customer 45,Traveling
+4,UAV,UAV travels with parcel,6162.932103900668,45,6237.111571989778,30,Fly to UAV customer 30,Traveling
+4,UAV,UAV taking off or landing with a parcel,6237.111571989778,30,6243.5028185385045,30,Land at UAV customer 30,Traveling
+4,UAV,UAV is stationary with a parcel,6243.5028185385045,30,6303.5028185385045,30,Serving UAV customer 30,Making Delivery
+4,UAV,UAV taking off or landing with no parcels,6303.5028185385045,30,6307.198441812868,30,Takeoff from UAV customer 30,Traveling
+4,UAV,UAV travels empty,6307.198441812868,30,6494.65530716561,34,Fly to truck at customer 34,Traveling
+4,UAV,UAV is stationary without a parcel,6494.65530716561,34,6978.100184854523,34,Idle above rendezvous location (customer 34),Idle
+4,UAV,UAV taking off or landing with no parcels,6978.100184854523,34,6984.491431403249,34,Land at truck rendezvous location (customer 34),Traveling
+4,UAV,UAV is stationary without a parcel,6984.49143140325,34,7014.49143140325,34,Recovered by truck at customer 34,UAV Recovery
+4,UAV,UAV is stationary with a parcel,7014.491431398849,34,7074.491431398849,34,Prepare to launch from truck,UAV Launch
+4,UAV,UAV taking off or landing with a parcel,7074.491431398849,34,7078.1870546732125,34,Takeoff from truck at Customer 34,Traveling
+4,UAV,UAV travels with parcel,7078.1870546732125,34,7317.278549742905,21,Fly to UAV customer 21,Traveling
+4,UAV,UAV taking off or landing with a parcel,7317.278549742906,21,7323.669796291632,21,Land at UAV customer 21,Traveling
+4,UAV,UAV is stationary with a parcel,7323.669796291632,21,7383.669796291632,21,Serving UAV customer 21,Making Delivery
+4,UAV,UAV taking off or landing with no parcels,7383.669796291632,21,7387.365419565996,21,Takeoff from UAV customer 21,Traveling
+4,UAV,UAV travels empty,7387.365419565996,21,7537.169254790609,16,Fly to truck at customer 16,Traveling
+4,UAV,UAV is stationary without a parcel,7537.169254790609,16,7667.36365971039,16,Idle above rendezvous location (customer 16),Idle
+4,UAV,UAV taking off or landing with no parcels,7667.36365971039,16,7673.754906259116,16,Land at truck rendezvous location (customer 16),Traveling
+4,UAV,UAV is stationary without a parcel,7673.754906259116,16,7703.754906259116,16,Recovered by truck at customer 16,UAV Recovery
+4,UAV,UAV is stationary with a parcel,7899.15509932825,22,7959.15509932825,22,Prepare to launch from truck,UAV Launch
+4,UAV,UAV taking off or landing with a parcel,7959.15509932825,22,7962.850722602613,22,Takeoff from truck at Customer 22,Traveling
+4,UAV,UAV travels with parcel,7962.850722602613,22,8064.184308355807,27,Fly to UAV customer 27,Traveling
+4,UAV,UAV taking off or landing with a parcel,8064.184308355808,27,8070.575554904534,27,Land at UAV customer 27,Traveling
+4,UAV,UAV is stationary with a parcel,8070.575554904534,27,8130.575554904534,27,Serving UAV customer 27,Making Delivery
+4,UAV,UAV taking off or landing with no parcels,8130.575554904534,27,8134.271178178898,27,Takeoff from UAV customer 27,Traveling
+4,UAV,UAV travels empty,8134.271178178898,27,8234.212382821761,51,Fly to depot,Traveling
+4,UAV,UAV is stationary without a parcel,8234.212382821761,51,8390.918118750458,51,Idle above depot location,Idle
+4,UAV,UAV taking off or landing with no parcels,8390.918118750458,51,8397.309365299185,51,Land at depot,Traveling
+4,UAV,UAV is stationary without a parcel,8397.309365299185,51,8427.309365299185,51,Recovered at depot,UAV Recovery
+5,UAV,UAV is stationary with a parcel,120.0,0,180.0,0,Prepare to launch from truck,UAV Launch
+5,UAV,UAV taking off or landing with a parcel,180.0,0,183.69562327436344,0,Takeoff from Depot,Traveling
+5,UAV,UAV travels with parcel,183.69562327436344,0,298.8885851843277,44,Fly to UAV customer 44,Traveling
+5,UAV,UAV taking off or landing with a parcel,298.8885851843277,44,305.2798317330546,44,Land at UAV customer 44,Traveling
+5,UAV,UAV is stationary with a parcel,305.2798317330546,44,365.2798317330546,44,Serving UAV customer 44,Making Delivery
+5,UAV,UAV taking off or landing with no parcels,365.2798317330546,44,368.975455007418,44,Takeoff from UAV customer 44,Traveling
+5,UAV,UAV travels empty,368.975455007418,44,482.18814668656006,15,Fly to truck at customer 15,Traveling
+5,UAV,UAV is stationary without a parcel,482.18814668656006,15,678.1123055024564,15,Idle above rendezvous location (customer 15),Idle
+5,UAV,UAV taking off or landing with no parcels,678.1123055024564,15,684.5035520511832,15,Land at truck rendezvous location (customer 15),Traveling
+5,UAV,UAV is stationary without a parcel,684.5035520511833,15,714.5035520511833,15,Recovered by truck at customer 15,UAV Recovery
+5,UAV,UAV is stationary with a parcel,1101.7195903701147,23,1161.7195903701147,23,Prepare to launch from truck,UAV Launch
+5,UAV,UAV taking off or landing with a parcel,1161.7195903701147,23,1165.4152136444782,23,Takeoff from truck at Customer 23,Traveling
+5,UAV,UAV travels with parcel,1165.4152136444782,23,1360.7864477879152,28,Fly to UAV customer 28,Traveling
+5,UAV,UAV taking off or landing with a parcel,1360.786447787915,28,1367.177694336642,28,Land at UAV customer 28,Traveling
+5,UAV,UAV is stationary with a parcel,1367.177694336642,28,1427.177694336642,28,Serving UAV customer 28,Making Delivery
+5,UAV,UAV taking off or landing with no parcels,1427.177694336642,28,1430.8733176110054,28,Takeoff from UAV customer 28,Traveling
+5,UAV,UAV travels empty,1430.8733176110054,28,1727.8076915686636,37,Fly to truck at customer 37,Traveling
+5,UAV,UAV is stationary without a parcel,1727.8076915686636,37,1966.1054849240725,37,Idle above rendezvous location (customer 37),Idle
+5,UAV,UAV taking off or landing with no parcels,1966.1054849240725,37,1972.4967314727994,37,Land at truck rendezvous location (customer 37),Traveling
+5,UAV,UAV is stationary without a parcel,1972.4967314727994,37,2002.4967314727994,37,Recovered by truck at customer 37,UAV Recovery
+5,UAV,UAV is stationary with a parcel,2452.473012094706,32,2512.473012094706,32,Prepare to launch from truck,UAV Launch
+5,UAV,UAV taking off or landing with a parcel,2512.473012094706,32,2516.1686353690693,32,Takeoff from truck at Customer 32,Traveling
+5,UAV,UAV travels with parcel,2516.1686353690693,32,2825.7387821228704,43,Fly to UAV customer 43,Traveling
+5,UAV,UAV taking off or landing with a parcel,2825.7387821228704,43,2832.1300286715973,43,Land at UAV customer 43,Traveling
+5,UAV,UAV is stationary with a parcel,2832.1300286715973,43,2892.1300286715973,43,Serving UAV customer 43,Making Delivery
+5,UAV,UAV taking off or landing with no parcels,2892.1300286715973,43,2895.8256519459605,43,Takeoff from UAV customer 43,Traveling
+5,UAV,UAV travels empty,2895.8256519459605,43,3008.371058233697,17,Fly to truck at customer 17,Traveling
+5,UAV,UAV is stationary without a parcel,3008.371058233697,17,3342.5999142267187,17,Idle above rendezvous location (customer 17),Idle
+5,UAV,UAV taking off or landing with no parcels,3342.5999142267187,17,3348.9911607754457,17,Land at truck rendezvous location (customer 17),Traveling
+5,UAV,UAV is stationary without a parcel,3348.9911607754457,17,3378.9911607754457,17,Recovered by truck at customer 17,UAV Recovery
+5,UAV,UAV is stationary with a parcel,3957.5363234319766,31,4017.5363234319766,31,Prepare to launch from truck,UAV Launch
+5,UAV,UAV taking off or landing with a parcel,4017.5363234319766,31,4021.23194670634,31,Takeoff from truck at Customer 31,Traveling
+5,UAV,UAV travels with parcel,4021.23194670634,31,4350.674956153957,25,Fly to UAV customer 25,Traveling
+5,UAV,UAV taking off or landing with a parcel,4350.674956153958,25,4357.066202702685,25,Land at UAV customer 25,Traveling
+5,UAV,UAV is stationary with a parcel,4357.066202702685,25,4417.066202702685,25,Serving UAV customer 25,Making Delivery
+5,UAV,UAV taking off or landing with no parcels,4417.066202702685,25,4420.761825977048,25,Takeoff from UAV customer 25,Traveling
+5,UAV,UAV travels empty,4420.761825977048,25,4724.378296914728,14,Fly to truck at customer 14,Traveling
+5,UAV,UAV is stationary without a parcel,4724.378296914728,14,4867.100959697569,14,Idle above rendezvous location (customer 14),Idle
+5,UAV,UAV taking off or landing with no parcels,4867.100959697569,14,4873.492206246296,14,Land at truck rendezvous location (customer 14),Traveling
+5,UAV,UAV is stationary without a parcel,4873.4922062462965,14,4903.4922062462965,14,Recovered by truck at customer 14,UAV Recovery
+5,UAV,UAV is stationary with a parcel,5213.187429077985,10,5273.187429077985,10,Prepare to launch from truck,UAV Launch
+5,UAV,UAV taking off or landing with a parcel,5273.187429077985,10,5276.883052352348,10,Takeoff from truck at Customer 10,Traveling
+5,UAV,UAV travels with parcel,5276.883052352348,10,5481.600596789148,48,Fly to UAV customer 48,Traveling
+5,UAV,UAV taking off or landing with a parcel,5481.600596789149,48,5487.991843337875,48,Land at UAV customer 48,Traveling
+5,UAV,UAV is stationary with a parcel,5487.991843337875,48,5547.991843337875,48,Serving UAV customer 48,Making Delivery
+5,UAV,UAV taking off or landing with no parcels,5547.991843337875,48,5551.6874666122385,48,Takeoff from UAV customer 48,Traveling
+5,UAV,UAV travels empty,5551.6874666122385,48,5616.924589062821,26,Fly to truck at customer 26,Traveling
+5,UAV,UAV is stationary without a parcel,5616.924589062821,26,5870.473473292748,26,Idle above rendezvous location (customer 26),Idle
+5,UAV,UAV taking off or landing with no parcels,5870.473473292748,26,5876.864719841475,26,Land at truck rendezvous location (customer 26),Traveling
+5,UAV,UAV is stationary without a parcel,5876.864719841476,26,5906.864719841476,26,Recovered by truck at customer 26,UAV Recovery
+5,UAV,UAV is stationary with a parcel,6369.236480626305,45,6429.236480626305,45,Prepare to launch from truck,UAV Launch
+5,UAV,UAV taking off or landing with a parcel,6429.236480626305,45,6432.932103900668,45,Takeoff from truck at Customer 45,Traveling
+5,UAV,UAV travels with parcel,6432.932103900668,45,6495.187637562379,36,Fly to UAV customer 36,Traveling
+5,UAV,UAV taking off or landing with a parcel,6495.187637562379,36,6501.578884111105,36,Land at UAV customer 36,Traveling
+5,UAV,UAV is stationary with a parcel,6501.578884111105,36,6561.578884111105,36,Serving UAV customer 36,Making Delivery
+5,UAV,UAV taking off or landing with no parcels,6561.578884111105,36,6565.2745073854685,36,Takeoff from UAV customer 36,Traveling
+5,UAV,UAV travels empty,6565.2745073854685,36,6649.093564670599,34,Fly to truck at customer 34,Traveling
+5,UAV,UAV is stationary without a parcel,6649.093564670599,34,6948.100185701958,34,Idle above rendezvous location (customer 34),Idle
+5,UAV,UAV taking off or landing with no parcels,6948.100185701958,34,6954.491432250685,34,Land at truck rendezvous location (customer 34),Traveling
+5,UAV,UAV is stationary without a parcel,6954.491432250685,34,6984.491432250685,34,Recovered by truck at customer 34,UAV Recovery
+5,UAV,UAV is stationary with a parcel,7074.491431398849,34,7134.491431398849,34,Prepare to launch from truck,UAV Launch
+5,UAV,UAV taking off or landing with a parcel,7134.491431398849,34,7138.1870546732125,34,Takeoff from truck at Customer 34,Traveling
+5,UAV,UAV travels with parcel,7138.1870546732125,34,7206.906157910799,38,Fly to UAV customer 38,Traveling
+5,UAV,UAV taking off or landing with a parcel,7206.9061579108,38,7213.297404459527,38,Land at UAV customer 38,Traveling
+5,UAV,UAV is stationary with a parcel,7213.297404459527,38,7273.297404459527,38,Serving UAV customer 38,Making Delivery
+5,UAV,UAV taking off or landing with no parcels,7273.297404459527,38,7276.99302773389,38,Takeoff from UAV customer 38,Traveling
+5,UAV,UAV travels empty,7276.99302773389,38,7393.381025738047,22,Fly to truck at customer 22,Traveling
+5,UAV,UAV is stationary without a parcel,7393.381025738047,22,7952.7638527795225,22,Idle above rendezvous location (customer 22),Idle
+5,UAV,UAV taking off or landing with no parcels,7952.7638527795225,22,7959.155099328249,22,Land at truck rendezvous location (customer 22),Traveling
+5,UAV,UAV is stationary without a parcel,7959.15509932825,22,7989.15509932825,22,Recovered by truck at customer 22,UAV Recovery
+5,UAV,UAV is stationary with a parcel,8019.15509932825,22,8079.15509932825,22,Prepare to launch from truck,UAV Launch
+5,UAV,UAV taking off or landing with a parcel,8079.15509932825,22,8082.850722602613,22,Takeoff from truck at Customer 22,Traveling
+5,UAV,UAV travels with parcel,8082.850722602613,22,8147.405766324759,7,Fly to UAV customer 7,Traveling
+5,UAV,UAV taking off or landing with a parcel,8147.4057663247595,7,8153.797012873486,7,Land at UAV customer 7,Traveling
+5,UAV,UAV is stationary with a parcel,8153.797012873486,7,8213.797012873485,7,Serving UAV customer 7,Making Delivery
+5,UAV,UAV taking off or landing with no parcels,8213.797012873485,7,8217.492636147848,7,Takeoff from UAV customer 7,Traveling
+5,UAV,UAV travels empty,8217.492636147848,7,8252.657418457942,51,Fly to depot,Traveling
+5,UAV,UAV is stationary without a parcel,8252.657418457942,51,8450.918118750458,51,Idle above depot location,Idle
+5,UAV,UAV taking off or landing with no parcels,8450.918118750458,51,8457.309365299185,51,Land at depot,Traveling
+5,UAV,UAV is stationary without a parcel,8457.309365299185,51,8487.309365299185,51,Recovered at depot,UAV Recovery
