@@ -407,9 +407,9 @@ if __name__ == '__main__':
 	parser.add_argument('problemName', type=str, nargs='?', 
 						default='ALL', help="Name of the input directory.")
 	parser.add_argument('vehicleFileID', type=str, nargs='?', 
-						default='101', help="Name of the solution file.")
+						default='101', help="Vehicle identifyer")
 	parser.add_argument('cutoffTime', type=str, nargs='?', 
-						default=5, help="Uncertainty included in the scenario.")
+						default=5)
 	parser.add_argument('problemType', type=str, nargs='?', 
 						default=2, help="Problem type.")
 	parser.add_argument('numUAVs', type=str, nargs='?', 
@@ -438,7 +438,7 @@ if __name__ == '__main__':
 	if args.numUAVs == 'ALL':
 		args.numUAVs = [1, 2, 3 ,4]
 
-	args.problemName = ['20170608T122043762852']
+	# args.problemName = ['20170608T122043762852']
 	# args.numUAVs = [1]
 
 	# Code below for processing with multiple cores
@@ -446,7 +446,7 @@ if __name__ == '__main__':
 	input_arr = [(problem, num, args) for problem in args.problemName for num in args.numUAVs]
 	
 	# Set up the multiprocessing pool
-	with mp.Pool(4) as pool:  # 4 is the number of processes, adjust as needed
+	with mp.Pool(6) as pool:  
 		# Use tqdm to track progress
 		list(tqdm.tqdm(pool.imap(process_mission_control, input_arr), total=len(input_arr)))
 	
